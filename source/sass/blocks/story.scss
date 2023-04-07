@@ -17,13 +17,38 @@
 
 .story__highlights-description {
   color: $bg-main;
-  margin-bottom: 17px;
+  margin-bottom: 37px;
 }
 
 .story__highlights-item {
   background-color: #81b3d2;
   list-style-type: none;
   min-height: 211px;
+}
+
+.story__preeminence-item {
+  background-color: #81b3d2;
+  list-style-type: none;
+  min-height: 211px;
+}
+
+.story__preeminence-title {
+  color: $bg-main;
+  padding-top: 37px;
+  margin-top: 46px;
+  margin-bottom: 16px;
+  size: 18px;
+  line-height: 26px;
+}
+
+.story__preeminence-numbering {
+  color: $bg-main;
+  margin-bottom: 17px;
+}
+
+.story__preeminence-description {
+  color: $bg-main;
+  margin-bottom: 37px;
 }
 
 .story__list {
@@ -48,8 +73,6 @@
 }
 
 .story__description {
-  size: 14px;
-  line-height: 21px;
   text-align: start;
   padding-left: 65px;
 }
@@ -67,7 +90,5 @@
 }
 
 .story__description-rank {
-  size: 18px;
-  line-height: 26px;
   margin-bottom: 49px;
 }
