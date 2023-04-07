@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/source/fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/source/fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/source/fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/source/fonts/ptsansbold.woff2") format("woff2");
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #ffffff;
+  width: 320px;
+  text-align: center;
+  color: #333333;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  size: 14px;
+  line-height: 21px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages__title {
+  color: #000000;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+  margin-bottom: 35px;
+}
+
+.advantages__description {
+  margin-bottom: 16px;
+}
+
+.introduction {
+  background: url("../../img/mobile/background-mobile.jpg") no-repeat;
+  background-color: aqua;
+  height: 389px;
+}
+
+.introduction__plan {
+  margin-top: 90px;
+}
+
+.location__map {
+  margin-top: 49px;
+}
+
+.page-footer__hashtag {
+  color: #000000;
+  size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  color: #000000;
+  size: 14px;
+  line-height: 21px;
+  margin-right: 12px;
+}
+
+.site-list__item {
+  list-style-type: none;
+  width: 320px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.site-list__link {
+  color: #ffffff;
+  size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  font-weight: 700;
+  padding-top: 17px;
+  padding-bottom: 12px;
+}
+
+.main-nav__list {
+  background-color: #81B3D2;
+  height: 223px;
+  display: none;
+}
+
+.page-header__logo-image {
+  height: 56px;
+}
+
+.search-hotels__title {
+  margin-top: 66px;
+  size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.search-hotels__description {
+  size: 14px;
+  line-height: 21px;
+  margin-bottom: 32px;
+}
+
+.search-hotels__button {
+  background-color: #81B3D2;
+  width: 284px;
+  padding: 16px 49px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 49px;
+}
+
+.social__list {
+  list-style: none;
+  width: 156px;
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 82px;
+  padding: 0px;
+}
+
+.social__item {
+  justify-content: space-betweens;
+  margin-right: 6px;
+}
+
+.story__item {
+  list-style-type: none;
+}
+
+.story__highlights-title {
+  color: #ffffff;
+  padding-top: 54px;
+  margin-bottom: 11px;
+  size: 18px;
+  line-height: 26px;
+}
+
+.story__highlights-numbering {
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.story__highlights-description {
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.story__highlights-item {
+  background-color: #81B3D2;
+  list-style-type: none;
+  min-height: 211px;
+}
+
+.story__list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.story__items {
+  margin: 0px;
+  padding: 0px;
+}
+
+.story__title {
+  color: #000000;
+  font-weight: 700;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 31px;
+  margin-bottom: 16px;
+  text-align: start;
+  padding-left: 65px;
+}
+
+.story__description {
+  size: 14px;
+  line-height: 21px;
+  text-align: start;
+  padding-left: 65px;
+}
+
+.title__story {
+  margin-top: 33px;
+}
+
+.story__title-rank {
+  color: #000000;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.story__description-rank {
+  size: 18px;
+  line-height: 26px;
+  margin-bottom: 49px;
+}
+
+.cards__list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cards__item {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.cards__title {
+  color: #000000;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 12pxs;
+}
+
+.cards__creator {
+  size: 14px;
+  line-height: 21px;
+  text-align: start;
+  margin-left: 20px;
+}
+
+.cards__block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+  height: 26px;
+}
+
+.cards__link-text {
+  color: #000000;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-left: 14px;
+}
+
+.intro__title {
+  color: #000000;
+  size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 37px;
+  margin-bottom: 45px;
+}
+
+.intro__description {
+  size: 14px;
+  line-height: 26px;
+}
+
+.view__title {
+  color: #000000;
+  size: 21px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.view__description {
+  size: 14px;
+  line-height: 21px;
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
+.welcome__backdrop {
+  background-color: aqua;
+  background: url("../../img/mobile/back-desktop.jpg") no-repeat;
+}
+
+.welcome__image {
+  margin-top: 52px;
+  margin-bottom: 67px;
+}
+
+.control__label {
+  color: #000000;
+  size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.data__section {
+  text-align: start;
+  margin-bottom: 64px;
+}
+
+.data__title-legend {
+  text-align: center;
+  size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.data__input {
+  size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.data__title {
+  size: 14px;
+}
+
+.data__feedback {
+  margin-bottom: 64px;
+  text-align: start;
+}
+
+.feedback__title {
+  color: #000000;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.feedback__description {
+  size: 14px;
+  line-height: 21px;
+  margin-bottom: 53px;
+}
+
+.handset__feedback {
+  text-align: center;
+  size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.response__list {
+  text-align: start;
+}
+/*# sourceMappingURL=style.css.map */
