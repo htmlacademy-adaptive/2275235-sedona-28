@@ -75,8 +75,8 @@ body {
 }
 
 .introduction {
-  background: url("../../img/mobile/background-mobile.jpg") no-repeat;
-  background-color: aqua;
+  background: url("../img/mobile/background-mobile.jpg") no-repeat;
+  background-color: #515151;
   height: 389px;
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .main-nav__list {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   height: 223px;
   display: none;
 }
@@ -153,7 +153,7 @@ body {
 }
 
 .search-hotels__button {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   width: 284px;
   padding: 16px 49px;
   color: #ffffff;
@@ -198,7 +198,7 @@ body {
 }
 
 .story__highlights-item {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   list-style-type: none;
   min-height: 211px;
 }
@@ -267,7 +267,7 @@ body {
   text-align: start;
   margin-left: 20px;
   margin-top: 15px;
-  margin-bottom: 12pxs;
+  margin-bottom: 12px;
 }
 
 .cards__creator {
@@ -322,8 +322,8 @@ body {
 }
 
 .welcome__backdrop {
-  background-color: aqua;
-  background: url("../../img/mobile/back-desktop.jpg") no-repeat;
+  background-color: #00ffff;
+  background-image: url("../img/mobile/back-desktop.jpg") no-repeat;
 }
 
 .welcome__image {
