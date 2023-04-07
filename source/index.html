@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -14,22 +15,22 @@
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a class="site-list__link">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
+              <a class="site-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
@@ -37,14 +38,14 @@
         </nav>
         <div class="page-header__logo-image">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
+            <img class="page-header__logo-img" src="img/mobile/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
           </a>
         </div>
       </header>
       <main class="page-wrapper">
         <section class="introduction">
           <h1 class="visually-hidden">Добро пожаловать в "Седону."</h1>
-          <img class="introduction__plan" src="img/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+          <img class="introduction__plan" src="img/mobile/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </section>
         <section class="advantages">
           <h2 class="advantages__title">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -52,56 +53,47 @@
         </section>
         <section class="story">
           <ul class="story__list">
-            <li class="story__item">
-              <h2 class="story__title">настоящий городок</h2>
-              <p class="story__numbering">— №1 —</p>
-              <p class="story__description">седона не аттракцион для туристов, там течет своя жизнь</p>
+            <li class="story__highlights-item">
+              <h2 class="story__highlights-title">настоящий городок</h2>
+              <p class="story__highlights-numbering">— №1 —</p>
+              <p class="story__highlights-description">седона не аттракцион для туристов, там течет своя жизнь</p>
             </li>
             <li class="story__item">
-              <img class="story__img" src="img/hotel.jpg" width="520" height="260" alt="отель.">
+              <img class="story__img" src="img/mobile/hotel.jpg" width="320" height="260" alt="отель.">              </li>
+            <li class="story__item">
+              <h2 class="story__title">жилье</h2>
+              <p class="story__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="story__item title">
+              <h2 class="story__title title__story">еда</h2>
+              <p class="story__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="story__item">
-              <ul class="story__items">
-                <li class="story__item">
-                  <h2 class="story__title">жилье</h2>
-                  <p class="story__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">еда</h2>
-                  <p class="story__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">сувениры</h2>
-                  <p class="story__description">не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
+              <h2 class="story__title title__story">сувениры</h2>
+              <p class="story__description">не только китайского, но и местного производства!</p>
+            </li>
+            <li class="story__highlights-item">
+              <h2 class="story__highlights-title">там есть мост дьявола</h2>
+              <p class="story__highlights-numbering">— №2 —</p>
+              <p class="story__highlights-description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            </li>
+            <li class="story-highlights__item">
+              <img class="story__img" src="img/mobile/bridge.jpg" width="320" height="260" alt="мост.">
             </li>
             <li class="story__item">
-              <h2 class="story__title">там есть мост дьявола</h2>
-              <p class="story__numbering">— №2 —</p>
-              <p class="story__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+              <h2 class="story__title-rank">небольшая площадь</h2>
+              <p class="story__numbering">— №3 —</p>
+              <p class="story__description-rank">все интересные места находятся очень близко</p>
             </li>
             <li class="story__item">
-              <img class="story__img" src="img/bridge.jpg" width="520" height="260" alt="мост.">
+              <h2 class="story__title-rank">красивая дорога</h2>
+              <p class="story__numbering">— №4 —</p>
+                <p class="story__description-rank">ехать в седону из лас-вегаса совсем не скучно!</p>
             </li>
             <li class="story__item">
-              <ul class="story__items">
-                <li class="story__item">
-                  <h2 class="story__title">небольшая площадь</h2>
-                  <p class="story__numbering">— №3 —</p>
-                  <p class="story__description">все интересные места находятся очень близко</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">красивая дорога</h2>
-                  <p class="story__numbering">— №4 —</p>
-                  <p class="story__description">ехать в седону из лас-вегаса совсем не скучно!</p>
-                </li>
-                <li class="story__item">
-                  <h2 class="story__title">мало туристов</h2>
-                  <p class="story__numbering">— №5 —</p>
-                  <p class="story__description">большинство едет в гранд каньон и толпится там</p>
-                </li>
-              </ul>
+              <h2 class="story__title-rank">мало туристов</h2>
+              <p class="story__numbering">— №5 —</p>
+              <p class="story__description">большинство едет в гранд каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -112,7 +104,7 @@
         </section>
         <section class="location">
           <h2 class="visually-hidden">местоположение седоны.</h2>
-          <img class="location__map" src="img/map.jpg" width="320" height="350" alt="седона на карте.">
+          <img class="location__map" src="img/mobile/map.jpg" width="320" height="350" alt="седона на карте.">
         </section>
       </main>
       <footer class="page-footer">
@@ -139,11 +131,13 @@
             </li>
           </ul>
         </div>
-        <p class="page-footer__copyright">разработано</p>
-        <a href="https://up.htmlacademy.ru/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
-          <span class="visually-hidden">сайт академии.</span>
-        </a>
+        <div class="page-footer__academy">
+          <p class="page-footer__copyright">разработано</p>
+          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
+           <span class="visually-hidden">сайт академии.</span>
+          </a>
+        </div>
       </footer>
     </div>
   </body>

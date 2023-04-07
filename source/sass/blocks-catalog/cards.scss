@@ -1,0 +1,39 @@
+.cards__list {
+  margin: 0px;
+  padding: 0px
+}
+.cards__item {
+  list-style: none;
+  margin-top: 25px;
+}
+.cards__title {
+  color: $bg-title;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 12pxs;
+}
+
+.cards__creator {
+  size: 14px;
+  line-height: 21px;
+  text-align: start;
+  margin-left: 20px;
+}
+.cards__block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 20px;
+  height: 26px;
+}
+.cards__link-text {
+  color: $bg-title;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-left: 14px;
+}

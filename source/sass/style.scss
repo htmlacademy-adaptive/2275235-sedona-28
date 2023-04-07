@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// базовые стили
+@import "./global/fonts.scss";
+@import "./global/base.scss";
+// миксины и переменные
+@import "./global/mixins.scss";
+@import "./global/variables.scss";
+// блоки
+@import "./blocks/advantages.scss";
+@import "./blocks/introduction.scss";
+@import "./blocks/location.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-wrapper.scss";
+@import "./blocks/search-hotels.scss";
+@import "./blocks/social.scss";
+@import "./blocks/story.scss";
+@import "./blocks-catalog/cards.scss";
+@import "./blocks-catalog/intro.scss";
+@import "./blocks-catalog/page-catalog.scss";
+@import "./blocks-catalog/view.scss";
+@import "./blocks-catalog/welcome.scss";
+@import "./blocks-form/choice.scss";
+@import "./blocks-form/control.scss";
+@import "./blocks-form/data.scss";
+@import "./blocks-form/feedback.scss";
+@import "./blocks-form/handset.scss";
+@import "./blocks-form/page-feedback.scss";
+@import "./blocks-form/response.scss";
