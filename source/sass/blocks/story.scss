@@ -1,6 +1,7 @@
 .story__item {
   list-style-type: none;
 }
+
 .story__highlights-title {
   color: $bg-main;
   padding-top: 54px;
@@ -8,28 +9,33 @@
   size: 18px;
   line-height: 26px;
 }
+
 .story__highlights-numbering {
   color: $bg-main;
   margin-bottom: 17px;
 }
+
 .story__highlights-description {
   color: $bg-main;
   margin-bottom: 17px;
 }
+
 .story__highlights-item {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   list-style-type: none;
   min-height: 211px;
 }
 
 .story__list {
-margin: 0px;
-padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+
 .story__items {
   margin: 0px;
   padding: 0px;
 }
+
 .story__title {
   color: $bg-title;
   font-weight: 700;
@@ -40,15 +46,18 @@ padding: 0px;
   text-align: start;
   padding-left: 65px;
 }
+
 .story__description {
   size: 14px;
   line-height: 21px;
   text-align: start;
   padding-left: 65px;
 }
+
 .title__story {
   margin-top: 33px;
 }
+
 .story__title-rank {
   color: $bg-title;
   size: 18px;
@@ -56,6 +65,7 @@ padding: 0px;
   margin-top: 24px;
   margin-bottom: 20px;
 }
+
 .story__description-rank {
   size: 18px;
   line-height: 26px;

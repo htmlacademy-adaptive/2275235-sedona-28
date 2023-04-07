@@ -1,11 +1,13 @@
 .cards__list {
   margin: 0px;
-  padding: 0px
+  padding: 0px;
 }
+
 .cards__item {
   list-style: none;
   margin-top: 25px;
 }
+
 .cards__title {
   color: $bg-title;
   size: 14px;
@@ -14,7 +16,7 @@
   text-align: start;
   margin-left: 20px;
   margin-top: 15px;
-  margin-bottom: 12pxs;
+  margin-bottom: 12px;
 }
 
 .cards__creator {
@@ -23,6 +25,7 @@
   text-align: start;
   margin-left: 20px;
 }
+
 .cards__block {
   display: flex;
   justify-content: start;
@@ -30,6 +33,7 @@
   margin-left: 20px;
   height: 26px;
 }
+
 .cards__link-text {
   color: $bg-title;
   size: 14px;

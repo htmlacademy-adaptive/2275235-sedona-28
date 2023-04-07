@@ -3,10 +3,12 @@
 *::after {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 body {
   background-color: #ffffff;
   width: 320px;
@@ -17,6 +19,7 @@ body {
   size: 14px;
   line-height: 21px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
