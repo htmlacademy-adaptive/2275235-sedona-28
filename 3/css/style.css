@@ -93,7 +93,7 @@ body {
   size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 33px;
+  margin-top: 41px;
   margin-bottom: 30px;
 }
 
@@ -105,8 +105,6 @@ body {
 
 .page-footer__copyright {
   color: #000000;
-  size: 14px;
-  line-height: 21px;
   margin-right: 12px;
 }
 
@@ -132,6 +130,7 @@ body {
   background-color: #81b3d2;
   height: 223px;
   display: none;
+  padding: 0px;
 }
 
 .page-header__logo-image {
@@ -139,7 +138,7 @@ body {
 }
 
 .search-hotels__title {
-  margin-top: 66px;
+  margin-top: 95px;
   size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -147,18 +146,16 @@ body {
 }
 
 .search-hotels__description {
-  size: 14px;
-  line-height: 21px;
   margin-bottom: 32px;
 }
 
 .search-hotels__button {
+  display: block;
   background-color: #81b3d2;
   width: 284px;
   padding: 16px 49px;
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 49px;
 }
 
 .social__list {
@@ -194,13 +191,38 @@ body {
 
 .story__highlights-description {
   color: #ffffff;
-  margin-bottom: 17px;
+  margin-bottom: 37px;
 }
 
 .story__highlights-item {
   background-color: #81b3d2;
   list-style-type: none;
   min-height: 211px;
+}
+
+.story__preeminence-item {
+  background-color: #81b3d2;
+  list-style-type: none;
+  min-height: 211px;
+}
+
+.story__preeminence-title {
+  color: #ffffff;
+  padding-top: 37px;
+  margin-top: 46px;
+  margin-bottom: 16px;
+  size: 18px;
+  line-height: 26px;
+}
+
+.story__preeminence-numbering {
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.story__preeminence-description {
+  color: #ffffff;
+  margin-bottom: 37px;
 }
 
 .story__list {
@@ -225,8 +247,6 @@ body {
 }
 
 .story__description {
-  size: 14px;
-  line-height: 21px;
   text-align: start;
   padding-left: 65px;
 }
@@ -244,8 +264,6 @@ body {
 }
 
 .story__description-rank {
-  size: 18px;
-  line-height: 26px;
   margin-bottom: 49px;
 }
 
@@ -271,8 +289,6 @@ body {
 }
 
 .cards__creator {
-  size: 14px;
-  line-height: 21px;
   text-align: start;
   margin-left: 20px;
 }
@@ -295,28 +311,27 @@ body {
 
 .intro__title {
   color: #000000;
-  size: 21px;
+  size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 37px;
+  margin-top: 66px;
   margin-bottom: 45px;
 }
 
 .intro__description {
   size: 14px;
-  line-height: 26px;
+  line-height: 21px;
 }
 
 .view__title {
   color: #000000;
-  size: 21px;
+  size: 18px;
   line-height: 26px;
+  font-weight: 700;
   margin-top: 50px;
 }
 
 .view__description {
-  size: 14px;
-  line-height: 21px;
   margin-top: 38px;
   margin-bottom: 38px;
 }
@@ -375,8 +390,6 @@ body {
 }
 
 .feedback__description {
-  size: 14px;
-  line-height: 21px;
   margin-bottom: 53px;
 }
 
