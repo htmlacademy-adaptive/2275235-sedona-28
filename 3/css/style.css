@@ -62,6 +62,10 @@ body {
   overflow: hidden;
 }
 
+.page__body {
+  margin: auto;
+}
+
 .advantages__title {
   color: #000000;
   size: 18px;
@@ -74,9 +78,9 @@ body {
   margin-bottom: 16px;
 }
 
-.introduction {
+.page-wrapper__chapter {
   background: url("../img/mobile/background-mobile.jpg") no-repeat;
-  background-color: #515151;
+  background-color: #2296c1;
   height: 389px;
 }
 
@@ -109,7 +113,7 @@ body {
 }
 
 .site-list__item {
-  list-style-type: none;
+  list-style: none;
   width: 320px;
   height: 55px;
   margin: 0px;
@@ -156,6 +160,7 @@ body {
   padding: 16px 49px;
   color: #ffffff;
   text-decoration: none;
+  margin-left: 18px;
 }
 
 .social__list {
@@ -173,7 +178,7 @@ body {
 }
 
 .story__item {
-  list-style-type: none;
+  list-style: none;
 }
 
 .story__highlights-title {
@@ -196,13 +201,13 @@ body {
 
 .story__highlights-item {
   background-color: #81b3d2;
-  list-style-type: none;
+  list-style: none;
   min-height: 211px;
 }
 
 .story__preeminence-item {
   background-color: #81b3d2;
-  list-style-type: none;
+  list-style: none;
   min-height: 211px;
 }
 
@@ -228,6 +233,7 @@ body {
 .story__list {
   margin: 0px;
   padding: 0px;
+  outline: 2px solid #40106f;
 }
 
 .story__items {
@@ -270,6 +276,7 @@ body {
 .cards__list {
   margin: 0px;
   padding: 0px;
+  outline: 2px solid #40106f;
 }
 
 .cards__item {
@@ -337,8 +344,8 @@ body {
 }
 
 .welcome__backdrop {
-  background-color: #00ffff;
-  background-image: url("../img/mobile/back-desktop.jpg") no-repeat;
+  background: url("../img/mobile/back-desktop.jpg") no-repeat;
+  background-color: #2296c1;
 }
 
 .welcome__image {
@@ -398,6 +405,10 @@ body {
   size: 18px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.page-feedback__form {
+  outline: 2px solid #40106f;
 }
 
 .response__list {
