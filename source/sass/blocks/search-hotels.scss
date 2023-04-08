@@ -12,9 +12,10 @@
 
 .search-hotels__button {
   display: block;
-  background-color: #81b3d2;
+  background-color: $background;
   width: 284px;
   padding: 16px 49px;
   color: $bg-main;
   text-decoration: none;
+  margin-left: 18px;
 }
