@@ -1,5 +1,5 @@
 .story__item {
-  list-style-type: none;
+  list-style: none;
 }
 
 .story__highlights-title {
@@ -22,13 +22,13 @@
 
 .story__highlights-item {
   background-color: $background;
-  list-style-type: none;
+  list-style: none;
   min-height: 211px;
 }
 
 .story__preeminence-item {
   background-color: $background;
-  list-style-type: none;
+  list-style: none;
   min-height: 211px;
 }
 
