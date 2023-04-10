@@ -3,7 +3,7 @@
 }
 
 .story__highlights-title {
-  color: $bg-main;
+  color: $color-main;
   padding-top: 54px;
   margin-bottom: 11px;
   size: 18px;
@@ -11,29 +11,29 @@
 }
 
 .story__highlights-numbering {
-  color: $bg-main;
+  color: $color-main;
   margin-bottom: 17px;
 }
 
 .story__highlights-description {
-  color: $bg-main;
+  color: $color-main;
   margin-bottom: 37px;
 }
 
 .story__highlights-item {
-  background-color: $background;
+  background-color: $environment-background;
   list-style: none;
   min-height: 211px;
 }
 
 .story__preeminence-item {
-  background-color: $background;
+  background-color: $environment-background;
   list-style: none;
   min-height: 211px;
 }
 
 .story__preeminence-title {
-  color: $bg-main;
+  color: $color-main;
   padding-top: 37px;
   margin-top: 46px;
   margin-bottom: 16px;
@@ -42,19 +42,19 @@
 }
 
 .story__preeminence-numbering {
-  color: $bg-main;
+  color: $color-main;
   margin-bottom: 17px;
 }
 
 .story__preeminence-description {
-  color: $bg-main;
+  color: $color-main;
   margin-bottom: 37px;
 }
 
 .story__list {
+  outline: $outline;
   margin: 0px;
   padding: 0px;
-  outline: $outline;
 }
 
 .story__items {
@@ -63,7 +63,7 @@
 }
 
 .story__title {
-  color: $bg-title;
+  color: $color-title;
   font-weight: 700;
   size: 18px;
   line-height: 26px;
@@ -83,7 +83,7 @@
 }
 
 .story__title-rank {
-  color: $bg-title;
+  color: $color-title;
   size: 18px;
   line-height: 26px;
   margin-top: 24px;

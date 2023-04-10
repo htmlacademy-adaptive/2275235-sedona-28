@@ -1,9 +1,9 @@
 // базовые стили
 @import "./global/fonts.scss";
-@import "./global/base.scss";
-// миксины и переменные
-@import "./global/mixins.scss";
 @import "./global/variables.scss";
+@import "./global/base.scss";
+// миксины
+@import "./global/mixins.scss";
 // блоки
 @import "./blocks/advantages.scss";
 @import "./blocks/introduction.scss";

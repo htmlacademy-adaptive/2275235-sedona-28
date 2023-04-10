@@ -1,5 +1,5 @@
 .search-hotels__title {
-  color: $bg-title;
+  color: $color-title;
   margin-top: 95px;
   size: 21px;
   line-height: 26px;
@@ -12,11 +12,11 @@
 }
 
 .search-hotels__button {
+  background-color: $environment-background;
   display: block;
-  background-color: $background;
   width: 284px;
   padding: 16px 49px;
-  color: $bg-main;
+  color: $color-main;
   text-decoration: none;
   margin-left: 18px;
 }

@@ -10,8 +10,8 @@ img {
 }
 
 body {
-  color: #333333;
-  background-color: #ffffff;
+  color: $color-paragraph;
+  background-color: $background-main;
   min-width: 320px;
   text-align: center;
   font-family: "PT Sans", sans-serif;

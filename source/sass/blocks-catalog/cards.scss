@@ -1,7 +1,7 @@
 .cards__list {
+  outline: $outline;
   margin: 0px;
   padding: 0px;
-  outline: $outline;
 }
 
 .cards__item {
@@ -10,7 +10,7 @@
 }
 
 .cards__title {
-  color: $bg-title;
+  color: $color-title;
   size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -34,7 +34,7 @@
 }
 
 .cards__link-text {
-  color: $bg-title;
+  color: $color-title;
   size: 14px;
   line-height: 21px;
   font-weight: 700;
