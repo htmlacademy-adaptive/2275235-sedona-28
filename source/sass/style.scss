@@ -12,6 +12,8 @@
 @import "./blocks/page-footer.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-wrapper.scss";
+@import "./blocks/page.scss";
+@import "./blocks/site-list.scss";
 @import "./blocks/search-hotels.scss";
 @import "./blocks/social.scss";
 @import "./blocks/story.scss";
@@ -25,5 +27,10 @@
 @import "./blocks-form/data.scss";
 @import "./blocks-form/feedback.scss";
 @import "./blocks-form/handset.scss";
+@import "./blocks-form/modal-failure.scss";
+@import "./blocks-form/modal-success.scss";
 @import "./blocks-form/page-feedback.scss";
 @import "./blocks-form/response.scss";
+// общие для всех файлов
+@import "./common/visually-hidden.scss";
+

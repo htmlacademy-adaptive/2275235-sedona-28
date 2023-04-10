@@ -1,0 +1,17 @@
+.site-list__item {
+  list-style: none;
+  width: 320px;
+  height: 55px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.site-list__link {
+  color: $bg-main;
+  size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+  font-weight: 700;
+  padding-top: 17px;
+  padding-bottom: 12px;
+}
