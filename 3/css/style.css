@@ -46,6 +46,10 @@ body {
   margin-bottom: 16px;
 }
 
+.advantages__piece {
+  padding: 0 18px;
+}
+
 .introduction__plan {
   margin-top: 90px;
 }
@@ -93,7 +97,7 @@ body {
 
 .page__content {
   width: 320px;
-  padding: 0 18px;
+  margin: auto;
 }
 
 .site-list__item {
@@ -134,7 +138,10 @@ body {
   padding: 16px 49px;
   color: #ffffff;
   text-decoration: none;
-  margin-left: 18px;
+}
+
+.search-hotels__piece {
+  padding: 0 18px;
 }
 
 .social__list {
@@ -247,10 +254,14 @@ body {
   margin-bottom: 49px;
 }
 
+.story__piece {
+  padding: 0 18px;
+}
+
 .cards__list {
   outline: 2px solid #40106f;
   margin: 0px;
-  padding: 0px;
+  padding: 0 18px;
 }
 
 .cards__item {
@@ -264,21 +275,18 @@ body {
   line-height: 21px;
   font-weight: 700;
   text-align: start;
-  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 12px;
 }
 
 .cards__creator {
   text-align: start;
-  margin-left: 20px;
 }
 
 .cards__block {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 20px;
   height: 26px;
 }
 
@@ -304,6 +312,10 @@ body {
   line-height: 21px;
 }
 
+.intro__piece {
+  padding: 0 18px;
+}
+
 .view__title {
   color: #000000;
   size: 18px;
@@ -315,6 +327,10 @@ body {
 .view__description {
   margin-top: 38px;
   margin-bottom: 38px;
+}
+
+.view__piece {
+  padding: 0 18px;
 }
 
 .welcome__backdrop {
