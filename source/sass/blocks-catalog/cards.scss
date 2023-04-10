@@ -1,7 +1,7 @@
 .cards__list {
   outline: $outline;
   margin: 0px;
-  padding: 0px;
+  padding: 0 18px;
 }
 
 .cards__item {
@@ -15,21 +15,18 @@
   line-height: 21px;
   font-weight: 700;
   text-align: start;
-  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 12px;
 }
 
 .cards__creator {
   text-align: start;
-  margin-left: 20px;
 }
 
 .cards__block {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-left: 20px;
   height: 26px;
 }
 
