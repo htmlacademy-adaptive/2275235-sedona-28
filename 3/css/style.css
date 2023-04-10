@@ -2,28 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("/source/fonts/ptsans.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/source/fonts/ptsans.woff2") format("woff2");
+  src: url("/source/fonts/ptsans.woff2") format("woff2"), url("/source/fonts/ptsans.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("/source/fonts/ptsansbold.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/source/fonts/ptsansbold.woff2") format("woff2");
+  src: url("/source/fonts/ptsansbold.woff2") format("woff2"), url("/source/fonts/ptsansbold.woff") format("woff");
   font-display: swap;
 }
 *,
@@ -38,32 +24,14 @@ img {
 }
 
 body {
-  background-color: #ffffff;
-  width: 320px;
-  text-align: center;
   color: #333333;
+  background-color: #ffffff;
+  min-width: 320px;
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   size: 14px;
   line-height: 21px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.page__body {
-  margin: auto;
 }
 
 .advantages__title {
@@ -78,18 +46,19 @@ body {
   margin-bottom: 16px;
 }
 
-.page-wrapper__chapter {
-  background: url("../img/mobile/background-mobile.jpg") no-repeat;
-  background-color: #2296c1;
-  height: 389px;
-}
-
 .introduction__plan {
   margin-top: 90px;
 }
 
 .location__map {
   margin-top: 49px;
+}
+
+.main-nav__list {
+  background-color: #81b3d2;
+  height: 223px;
+  display: none;
+  padding: 0px;
 }
 
 .page-footer__hashtag {
@@ -112,6 +81,24 @@ body {
   margin-right: 12px;
 }
 
+.page-header__logo-image {
+  height: 56px;
+}
+
+.page-wrapper__chapter {
+  background: url("../img/mobile/background-mobile.jpg") no-repeat;
+  background-color: #81b3d2;
+  height: 389px;
+}
+
+.page__body {
+  margin: auto;
+}
+
+.page__content {
+  width: auto;
+}
+
 .site-list__item {
   list-style: none;
   width: 320px;
@@ -128,17 +115,6 @@ body {
   font-weight: 700;
   padding-top: 17px;
   padding-bottom: 12px;
-}
-
-.main-nav__list {
-  background-color: #81b3d2;
-  height: 223px;
-  display: none;
-  padding: 0px;
-}
-
-.page-header__logo-image {
-  height: 56px;
 }
 
 .search-hotels__title {
@@ -345,7 +321,7 @@ body {
 
 .welcome__backdrop {
   background: url("../img/mobile/back-desktop.jpg") no-repeat;
-  background-color: #2296c1;
+  background-color: #81b3d2;
 }
 
 .welcome__image {
@@ -407,11 +383,33 @@ body {
   font-weight: 700;
 }
 
+.modal-failure__hide {
+  display: none;
+}
+
+.modal-success__hide {
+  display: none;
+}
+
 .page-feedback__form {
   outline: 2px solid #40106f;
 }
 
 .response__list {
   text-align: start;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
