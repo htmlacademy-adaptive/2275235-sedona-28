@@ -91,12 +91,9 @@ body {
   height: 389px;
 }
 
-.page__body {
-  margin: auto;
-}
-
 .page__content {
-  width: auto;
+  width: 320px;
+  padding: 0 18px;
 }
 
 .site-list__item {
@@ -118,6 +115,7 @@ body {
 }
 
 .search-hotels__title {
+  color: #000000;
   margin-top: 95px;
   size: 21px;
   line-height: 26px;
@@ -130,8 +128,8 @@ body {
 }
 
 .search-hotels__button {
-  display: block;
   background-color: #81b3d2;
+  display: block;
   width: 284px;
   padding: 16px 49px;
   color: #ffffff;
@@ -207,9 +205,9 @@ body {
 }
 
 .story__list {
+  outline: 2px solid #40106f;
   margin: 0px;
   padding: 0px;
-  outline: 2px solid #40106f;
 }
 
 .story__items {
@@ -250,9 +248,9 @@ body {
 }
 
 .cards__list {
+  outline: 2px solid #40106f;
   margin: 0px;
   padding: 0px;
-  outline: 2px solid #40106f;
 }
 
 .cards__item {
