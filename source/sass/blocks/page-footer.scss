@@ -17,3 +17,19 @@
   color: $color-title;
   margin-right: 12px;
 }
+
+@media (min-width: 768px) {
+  .page-footer__connection {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__connection {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+  }
+}

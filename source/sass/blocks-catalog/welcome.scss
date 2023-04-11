@@ -7,3 +7,20 @@
   margin-top: 52px;
   margin-bottom: 67px;
 }
+
+@media (min-width: 768px) {
+  .welcome__backdrop {
+    background: url("../img/tablet/back-main.jpg") no-repeat;
+    background-color: $environment-background;
+    min-height: 290px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome__backdrop {
+    background: url("../img/tablet/back-main.jpg") no-repeat;
+    background-color: $environment-background;
+    background-size: cover;
+    min-height: 518px;
+  }
+}
