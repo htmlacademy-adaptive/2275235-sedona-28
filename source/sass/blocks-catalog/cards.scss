@@ -37,3 +37,47 @@
   font-weight: 700;
   margin-left: 14px;
 }
+
+@media (min-width: 768px) {
+  .cards__list {
+    padding: 0 60px;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 324px 324px;
+  }
+
+  .cards__item {
+    background-color: $background-cards;
+    margin: 0;
+  }
+
+  .cards__item:first-child {
+    grid-column: 1/3;
+  }
+
+  .cards__item:nth-child(3n) {
+    background-color: $background-cards-north;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards__list {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .cards__item {
+    background-color: $background-cards;
+    margin: 0;
+  }
+
+  .cards__item:first-child {
+    grid-column: 1/4;
+  }
+
+  .cards__item:nth-child(3n) {
+    background-color: $background-cards-north;
+  }
+}
