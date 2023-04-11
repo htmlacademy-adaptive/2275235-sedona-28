@@ -1,0 +1,99 @@
+.story__item {
+  list-style: none;
+}
+
+.story__highlights-title {
+  color: $color-main;
+  padding-top: 54px;
+  margin-bottom: 11px;
+  size: 18px;
+  line-height: 26px;
+}
+
+.story__highlights-numbering {
+  color: $color-main;
+  margin-bottom: 17px;
+}
+
+.story__highlights-description {
+  color: $color-main;
+  margin-bottom: 37px;
+}
+
+.story__highlights-item {
+  background-color: $environment-background;
+  list-style: none;
+  min-height: 211px;
+}
+
+.story__preeminence-item {
+  background-color: $environment-background;
+  list-style: none;
+  min-height: 211px;
+}
+
+.story__preeminence-title {
+  color: $color-main;
+  padding-top: 37px;
+  margin-top: 46px;
+  margin-bottom: 16px;
+  size: 18px;
+  line-height: 26px;
+}
+
+.story__preeminence-numbering {
+  color: $color-main;
+  margin-bottom: 17px;
+}
+
+.story__preeminence-description {
+  color: $color-main;
+  margin-bottom: 37px;
+}
+
+.story__list {
+  outline: $outline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.story__items {
+  margin: 0px;
+  padding: 0px;
+}
+
+.story__title {
+  color: $color-title;
+  font-weight: 700;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 31px;
+  margin-bottom: 16px;
+  text-align: start;
+  padding-left: 65px;
+}
+
+.story__description {
+  text-align: start;
+  padding-left: 65px;
+}
+
+.title__story {
+  margin-top: 33px;
+}
+
+.story__title-rank {
+  color: $color-title;
+  size: 18px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.story__description-rank {
+  margin-bottom: 49px;
+}
+
+.story__piece {
+  padding: 0 18px;
+}

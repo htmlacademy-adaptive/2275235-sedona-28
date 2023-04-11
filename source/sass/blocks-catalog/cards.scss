@@ -1,0 +1,39 @@
+.cards__list {
+  outline: $outline;
+  margin: 0px;
+  padding: 0 18px;
+}
+
+.cards__item {
+  list-style: none;
+  margin-top: 25px;
+}
+
+.cards__title {
+  color: $color-title;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: start;
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.cards__creator {
+  text-align: start;
+}
+
+.cards__block {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 26px;
+}
+
+.cards__link-text {
+  color: $color-title;
+  size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-left: 14px;
+}

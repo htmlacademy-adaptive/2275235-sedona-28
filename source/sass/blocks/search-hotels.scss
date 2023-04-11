@@ -1,0 +1,24 @@
+.search-hotels__title {
+  color: $color-title;
+  margin-top: 95px;
+  size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.search-hotels__description {
+  margin-bottom: 32px;
+}
+
+.search-hotels__button {
+  background-color: $environment-background;
+  display: block;
+  width: 284px;
+  padding: 16px 49px;
+  color: $color-main;
+  text-decoration: none;
+}
+.search-hotels__piece {
+  padding: 0 18px;
+}

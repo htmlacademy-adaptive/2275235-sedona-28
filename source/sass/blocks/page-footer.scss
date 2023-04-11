@@ -1,0 +1,19 @@
+.page-footer__hashtag {
+  color: $color-title;
+  size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 41px;
+  margin-bottom: 30px;
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  color: $color-title;
+  margin-right: 12px;
+}

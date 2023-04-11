@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page__content">
@@ -13,23 +15,23 @@
             <span class="visually-hidden">Открыть меню.</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="index.html">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a>
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link">
                 форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">
+              <a class="site-list__link" href="https://htmlacademy.ru">
                 html academy
               </a>
             </li>
@@ -37,22 +39,24 @@
         </nav>
         <div class="page-header__logo-image">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-img" src="img/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
+            <img class="page-header__logo-img" src="img/mobile/logo.svg" width="185" height="96" alt="Логотип Города Седона.">
           </a>
         </div>
       </header>
       <main class="page-feedback">
         <section class="welcome">
-          <h1 class="visually-hidden">"Cедона."</h1>
-          <img src="img/sedona.svg" width="229" height="39" alt="приветствует седона.">
-        </section>
+          <div class="welcome__backdrop">
+            <h1 class="visually-hidden">"Cедона."</h1>
+            <img class="welcome__image" src="img/mobile/sedona.svg" width="229" height="39" alt="приветствует седона.">
+          </div>
+          </section>
         <section class="feedback">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
-        <form class="data" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="data page-feedback__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="data__section">
-            <legend class="data__title">Представьтесь:</legend>
+            <legend class="data__title-legend">Представьтесь:</legend>
             <label class="data__title" for="firstname">имя*:</label>
             <input class="data__input" type="text" name="firstname" id="firstname" placeholder="Пётр" required>
             <label class="data__title" for="lastname">фамилия*:</label>
@@ -67,8 +71,8 @@
             <label class="handset__subscribe-title" for="email">Электронная почта*:</label>
             <input class="handset__subscribe-input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
           </fieldset>
-          <fieldset class="data__feedback response ">
-            <legend class="data__title">ваше общее впечатление:</legend>
+          <fieldset class="data__feedback response">
+            <legend class="data__title-legend">ваше общее впечатление:</legend>
             <ul class="response__list">
               <li class="response__item">
                 <label class="control">
@@ -79,55 +83,55 @@
               </li>
               <li class="response__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Скорее отрицательное</span>
+                  <input class="visually-hidden control__input" type="radio" name="accomodation-radio">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="response__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Затрудняюсь ответить</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="data__feedback choice">
-            <legend class="data__title">посещенные достопримечательности:</legend>
+            <legend class="data__title-legend">посещенные достопримечательности:</legend>
             <ul class="choice__list">
               <li class="choice__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Мост Дьявола</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Гора-Колокол</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Слайд-парк</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Красные скалы</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Красные скалы</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="data__feedback">
-            <legend class="data__title">опишите свои эмоции:</legend>
+            <legend class="data__title-legend">опишите свои эмоции:</legend>
             <textarea class="data__textbox-input" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <fieldset class="data__feedback">
@@ -167,14 +171,18 @@
         </a>
       </footer>
       <div class="modal-failure">
-        <h2 class="modal-failure__title">что-то пошло не так!</h2>
-        <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-failure__btn" type="button">ок</button>
+        <div class="modal-failure__hide">
+          <h2 class="modal-failure__title">что-то пошло не так!</h2>
+          <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-failure__btn" type="button">ок</button>
+        </div>
       </div>
       <div class="modal-success">
-        <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
-        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="modal-success__btn" type="button">закрыть окно</button>
+        <div class="modal-success__hide">
+          <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
+          <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="modal-success__btn" type="button">закрыть окно</button>
+        </div>
       </div>
     </div>
   </body>
