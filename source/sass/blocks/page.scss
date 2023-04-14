@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page__content {
     width: 768px;
   }

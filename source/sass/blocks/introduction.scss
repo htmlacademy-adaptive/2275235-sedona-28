@@ -1,3 +1,15 @@
 .introduction__plan {
-  margin-top: 90px;
+  padding-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .introduction__plan {
+    padding-top: 133px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction__plan {
+    padding-top: 134px;
+  }
 }
