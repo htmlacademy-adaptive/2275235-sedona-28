@@ -6,13 +6,13 @@
 .data__title-legend {
   text-align: center;
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   font-weight: 700;
 }
 
 .data__input {
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   font-weight: 700;
 }
 
@@ -25,7 +25,7 @@
   text-align: start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .data__container {
     padding: 0 60px;
     margin-left: auto;

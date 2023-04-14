@@ -7,7 +7,7 @@
   padding-top: 54px;
   margin-bottom: 11px;
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
 }
 
 .story__highlights-numbering {
@@ -40,7 +40,7 @@
   margin-top: 46px;
   margin-bottom: 16px;
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
 }
 
 .story__preeminence-numbering {
@@ -68,7 +68,7 @@
   color: $color-title;
   font-weight: 700;
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   margin-top: 31px;
   margin-bottom: 16px;
   text-align: start;
@@ -87,7 +87,7 @@
 .story__title-rank {
   color: $color-title;
   size: 18px;
-  line-height: 26px;
+  line-height: 1.44;
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -100,11 +100,11 @@
   padding: 0 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .story__list {
     display: grid;
     grid-template-columns: 256px 256px 256px;
-    width: 768px;
+    width: $tablet-width;
   }
 
   .story__piece {
