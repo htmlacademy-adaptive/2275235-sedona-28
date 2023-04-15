@@ -15,3 +15,45 @@
   padding-top: 17px;
   padding-bottom: 12px;
 }
+
+@media (min-width: 768px) {
+  .site-list__link {
+    color: $color-title;
+    size: 14px;
+    line-height: 21px;
+  }
+
+  .site-list__item {
+    width: 153px;
+    padding-top: 18px;
+  }
+
+  .site-list__item:nth-child(2n+2) {
+    margin-right: 156px;
+  }
+
+  .site-list__item:nth-child(n+4) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-list__link {
+    color: $color-title;
+    size: 14px;
+    line-height: 21px;
+  }
+
+  .site-list__item {
+    width: 240px;
+    padding-top: 18px;
+  }
+
+  .site-list__item:nth-child(2n+2) {
+    margin-right: 240px;
+  }
+
+  .site-list__item:nth-child(n+4) {
+    margin-right: 0;
+  }
+}

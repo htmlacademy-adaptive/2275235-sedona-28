@@ -13,3 +13,17 @@
 .advantages__piece {
   padding: 0 18px;
 }
+
+@media (min-width: 768px) {
+  .advantages__piece {
+    width: 520px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__piece {
+    width: 484px;
+    margin: auto;
+  }
+}
