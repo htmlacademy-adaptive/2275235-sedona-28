@@ -66,25 +66,14 @@
     background-color: $background-main;
     display: flex;
     min-height: 56px;
+    top: 0;
     margin: 0;
     padding: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav--opened .site-list__item:last-child::before {
     display: none;
-  }
-
-  .main-nav__list {
-    background-color: $background-main;
-    display: flex;
-    min-height: 56px;
-    margin: 0;
-    padding: 0;
   }
 }

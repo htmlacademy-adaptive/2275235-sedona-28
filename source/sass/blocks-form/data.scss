@@ -45,16 +45,6 @@
 @media (min-width: 1200px) {
   .data__container {
     padding: 0 120px;
-    margin-left: auto;
-    display: grid;
     grid-template-columns: 480px 480px;
-  }
-
-  .data__section {
-    grid-column: 1/2;
-  }
-
-  .data__feedback:nth-child(n+3) {
-    grid-column: 1/3;
   }
 }
