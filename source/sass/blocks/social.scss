@@ -2,6 +2,7 @@
   list-style: none;
   width: 156px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
   margin-left: 82px;
   padding: 0px;
@@ -9,6 +10,11 @@
 }
 
 .social__item {
-  justify-content: space-betweens;
   margin-right: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-left: 0;
+  }
 }

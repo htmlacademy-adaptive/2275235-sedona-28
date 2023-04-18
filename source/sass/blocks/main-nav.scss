@@ -4,10 +4,9 @@
 
 .main-nav__list {
   min-height: 223px;
-  position: absolute;
-  top: -16px;
   padding: 0px;
   background-color: $environment-background;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {

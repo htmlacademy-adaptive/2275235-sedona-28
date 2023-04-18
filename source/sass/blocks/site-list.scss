@@ -10,7 +10,7 @@
   position: relative;
   display: block;
   color: $color-main;
-  size: 18px;
+  font-size: 18px;
   line-height: 1.44;
   text-decoration: none;
   font-weight: 700;
@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .site-list__link {
     color: $color-title;
-    size: 14px;
+    font-size: 14px;
     line-height: 1.50;
     border: none;
   }
@@ -54,7 +54,7 @@
 @media (min-width: 1200px) {
   .site-list__link {
     color: $color-title;
-    size: 14px;
+    font-size: 14px;
     line-height: 1.50;
     border: none;
   }
