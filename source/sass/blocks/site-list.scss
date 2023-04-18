@@ -52,13 +52,6 @@
 }
 
 @media (min-width: 1200px) {
-  .site-list__link {
-    color: $color-title;
-    font-size: 14px;
-    line-height: 1.50;
-    border: none;
-  }
-
   .site-list__link--current {
     color: #766357;
   }

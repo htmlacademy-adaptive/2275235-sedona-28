@@ -5,6 +5,7 @@
   overflow: hidden;
   margin: 0 auto;
   background-color: $background-main;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
 }
 
 @media (min-width: $tablet-width) {
@@ -16,7 +17,6 @@
 @media (min-width: 1200px) {
   .page__content {
     width: 1200px;
-    box-shadow: #E7E5E5;
     margin: 0 auto;
   }
 }
