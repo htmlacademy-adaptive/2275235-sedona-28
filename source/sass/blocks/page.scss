@@ -1,9 +1,13 @@
 .page__content {
   width: 320px;
   margin: auto;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: $background-main;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page__content {
     width: 768px;
   }

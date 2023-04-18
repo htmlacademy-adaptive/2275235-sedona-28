@@ -1,3 +1,17 @@
 .response__list {
   text-align: start;
 }
+
+@media (min-width: $tablet-width) {
+  .response__list {
+    display: grid;
+    grid-template-columns: 280px 280px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .response__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

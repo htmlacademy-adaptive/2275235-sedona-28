@@ -4,7 +4,7 @@
   min-height: 389px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-wrapper__chapter {
     background: url("../img/tablet/back-tablet.jpg") no-repeat;
     background-color: $environment-background;
@@ -17,6 +17,5 @@
     background: url("../img/desktop/back-desktop.jpg") no-repeat;
     background-color: $environment-background;
     background-size: cover;
-    min-height: 518px;
   }
 }

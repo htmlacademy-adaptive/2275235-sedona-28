@@ -1,0 +1,28 @@
+@media (min-width: $tablet-width) {
+  .choice__list {
+    display: grid;
+    grid-template-columns: 224px 224px;
+  }
+
+  .choice__item {
+    width: 224px;
+    gap: 16px;
+    margin-left: 84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choice__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .choice__item {
+    display: grid;
+    width: 172px;
+    gap: 26px;
+    margin-left: 44px;
+  }
+}

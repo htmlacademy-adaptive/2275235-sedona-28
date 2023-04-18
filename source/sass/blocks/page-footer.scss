@@ -1,7 +1,7 @@
 .page-footer__hashtag {
   color: $color-title;
-  size: 21px;
-  line-height: 26px;
+  font-size: 21px;
+  line-height: 1.24;
   font-weight: 700;
   margin-top: 41px;
   margin-bottom: 30px;
@@ -18,18 +18,32 @@
   margin-right: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-footer__connection {
     display: flex;
     justify-content: space-between;
-    min-height: 120px;
+    min-height: 116px;
+  }
+
+  .page-footer__hashtag {
+    margin-left: 60px;
+  }
+
+  .page-footer__academy {
+    margin-right: 60px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $tablet-width) {
   .page-footer__connection {
-    display: flex;
-    justify-content: space-between;
     min-height: 120px;
+  }
+
+  .page-footer__hashtag {
+    margin-left: 120px;
+  }
+
+  .page-footer__academy {
+    margin-right: 120px;
   }
 }
