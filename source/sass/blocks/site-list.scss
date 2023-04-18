@@ -51,14 +51,9 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .site-list__link--current {
-    color: #766357;
-  }
-
+@media (min-width: $desktop-width) {
   .site-list__item {
     width: 240px;
-    border: none;
   }
 
   .site-list__item:nth-child(2n+2) {

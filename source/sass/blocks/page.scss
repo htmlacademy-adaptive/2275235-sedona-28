@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page__content {
     width: 1200px;
     margin: 0 auto;
