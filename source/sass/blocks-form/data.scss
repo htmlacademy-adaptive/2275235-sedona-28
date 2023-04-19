@@ -1,7 +1,12 @@
+.data__container {
+  padding: 0 18px;
+}
+
 .data__section {
   text-align: start;
   margin-bottom: 64px;
-  padding-left: 18px;
+  padding: 0;
+  border: none;
 }
 
 .data__title-legend {
@@ -37,12 +42,14 @@
 .data__title {
   display: flex;
   font-size: 14px;
+  margin-left: 16px;
 }
 
 .data__feedback {
   margin-bottom: 64px;
   text-align: start;
-  padding-left: 18px;
+  padding: 0;
+  border: none;
 }
 
 .data__btn {
@@ -78,6 +85,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .data__title-legend {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
   .data__container {
     padding: 0 60px;
     display: grid;
@@ -87,6 +99,8 @@
   .data__section {
     grid-column: 1/2;
     padding-left: 0;
+    margin-right: 58px;
+    margin-left: 0;
   }
 
   .data__feedback:nth-child(n+3) {
@@ -96,6 +110,7 @@
   .data__feedback {
     position: relative;
     padding: 0;
+    margin: 0;
   }
 
   .data__send {
@@ -120,11 +135,19 @@
     padding: 0 120px;
   }
 
+  .data__input {
+    width: 430px;
+  }
+
   .data__textbox-input {
     width: 768px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .data__section {
+    margin-right: 100px;
   }
 
   .data__feedback:nth-child(n+3) {
