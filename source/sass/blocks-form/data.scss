@@ -4,9 +4,14 @@
 
 .data__section {
   text-align: start;
-  margin-bottom: 64px;
+  margin-bottom: 59px;
   padding: 0;
   border: none;
+}
+
+.data__section::after {
+  position: absolute;
+  border-top: 1px solid $border;
 }
 
 .data__title-legend {
@@ -14,7 +19,7 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .data__input {
@@ -88,6 +93,8 @@
   .data__title-legend {
     font-size: 21px;
     line-height: 1.24;
+    margin-top: 48px;
+    margin-bottom: 28px;
   }
 
   .data__container {
@@ -99,8 +106,10 @@
   .data__section {
     grid-column: 1/2;
     padding-left: 0;
-    margin-right: 58px;
+    padding-right: 29px;
+    margin-right: 29px;
     margin-left: 0;
+    border-right: 1px solid $border;
   }
 
   .data__feedback:nth-child(n+3) {
@@ -111,6 +120,7 @@
     position: relative;
     padding: 0;
     margin: 0;
+    margin-bottom: 42px;
   }
 
   .data__send {
