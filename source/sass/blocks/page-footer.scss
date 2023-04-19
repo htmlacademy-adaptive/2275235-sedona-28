@@ -27,6 +27,7 @@
 
   .page-footer__hashtag {
     margin-left: 60px;
+    align-self: center;
   }
 
   .page-footer__academy {
@@ -34,7 +35,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .page-footer__connection {
     min-height: 120px;
   }
