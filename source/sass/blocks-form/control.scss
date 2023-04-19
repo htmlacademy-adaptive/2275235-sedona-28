@@ -3,12 +3,5 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-}
-
-@media (min-width: $tablet-width) {
-  .control__label {
-    display: block;
-    width: 280px;
-    margin-bottom: 16px;
-  }
+  text-transform: none;
 }
