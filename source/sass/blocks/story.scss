@@ -213,27 +213,34 @@
     padding: 40px 140px 20px;
     margin: 0;
   }
+
   .story__highlights-numbering {
     margin: 0;
     padding: 0;
   }
+
   .story__highlights-description {
     padding: 30px 50px 55px;
     margin: 0;
   }
+
   .story__highlights-description:nth-child(n+2) {
     padding: 0 50px 69px;
   }
+
   .story__description {
     padding: 0 50px 69px;
   }
+
   .story__preeminence-title {
     padding: 52px 60px 22px;
     margin: 0;
   }
+
   .story__preeminence-numbering {
     margin: 0;
   }
+
   .story__preeminence-description {
     padding: 33px 90px 55px;
     margin: 0;
@@ -248,5 +255,4 @@
     padding: 35px 50px 57px;
     border: none;
   }
-
 }
