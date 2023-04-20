@@ -95,6 +95,8 @@
     line-height: 1.24;
     margin-top: 48px;
     margin-bottom: 28px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
 
   .data__container {
@@ -123,6 +125,10 @@
     margin-bottom: 42px;
   }
 
+  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
+    border-top: 1px solid $border;
+  }
+
   .data__send {
     position: absolute;
     right: 0;
@@ -142,6 +148,7 @@
 
 @media (min-width: $desktop-width) {
   .data__container {
+    grid-template-columns: 480px 480px;
     padding: 0 120px;
   }
 
@@ -157,12 +164,25 @@
   }
 
   .data__section {
-    margin-right: 100px;
+    margin-right: 49.5px;
+    padding-right: 49.5px;
   }
 
   .data__feedback:nth-child(n+3) {
-    width: 768px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .data__feedback:nth-child(2) {
+    margin-left: 49.5px;
+  }
+
+  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
+    border-top: 1px solid $border;
+  }
+
+  .data__title-legend {
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
