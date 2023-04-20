@@ -1,17 +1,36 @@
 .intro__title {
   color: $color-title;
-  size: 18px;
-  line-height: 26px;
+  font-size: 30px;
+  line-height: 0.87;
   font-weight: 700;
   margin-top: 66px;
   margin-bottom: 45px;
 }
 
 .intro__description {
-  size: 14px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 1.50;
 }
 
 .intro__piece {
   padding: 0 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__description {
+    padding: 0 145px 67px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+  .intro__description {
+    padding: 0 365px 112px;
+    margin: 0;
+  }
 }

@@ -1,7 +1,7 @@
 .view__title {
   color: $color-title;
-  size: 18px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 1.44;
   font-weight: 700;
   margin-top: 50px;
 }
@@ -13,4 +13,27 @@
 
 .view__piece {
   padding: 0 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .view__title {
+    font-size: 30px;
+    margin-top: 57px;
+    margin-bottom: 38px;
+  }
+
+  .view__description {
+    margin: 0;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .view__title {
+    margin-top: 66px;
+  }
+
+  .view__description {
+    margin-bottom: 87px;
+  }
 }

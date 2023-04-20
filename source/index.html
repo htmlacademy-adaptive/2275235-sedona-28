@@ -12,35 +12,44 @@
   <div class="page__content">
     <header class="page-header">
       <div class="page-header__nav">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-              <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+            <svg class="main-nav__opened" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#81B3D2"
+              viewBox="0 0 23 22">
+              <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
             </svg>
             <span class="visually-hidden">Открыть меню.</span>
+            <svg class="main-nav__closed" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#ffffff"
+              viewBox="0 0 23 22">
+              <path
+                d="M22.2 3.18 19.4.47 11.1 8.5 2.8.47 0 3.17l8.3 8.05L0 19.26l2.8 2.7 8.3-8.03 8.3 8.04 2.8-2.71-8.3-8.04 8.3-8.04Z" />
+            </svg>
+            <span class="visually-hidden">Закрыть меню.</span>
           </button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link">
-                главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
-                фото и видео
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                форма отзыва
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">
-                html academy
-              </a>
-            </li>
-          </ul>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--current">
+                  главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="catalog.html">
+                  фото и видео
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru">
+                  html academy
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="page-header__logo-image">
           <a class="page-header__logo" href="index.html">
@@ -57,10 +66,8 @@
           alt="Добро пожаловать в Седону.">
       </section>
       <section class="advantages">
-        <div class="advantages__piece">
-          <h2 class="advantages__title">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
-          <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
+        <h2 class="advantages__title">седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+        <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="story">
         <ul class="story__list">
@@ -74,20 +81,20 @@
           <li class="story__highlights-img">
             <img class="story__img" src="img/mobile/hotel.jpg" width="320" height="260" alt="отель.">
           </li>
-          <li class="story__item title">
-            <div class="story__piece">
+          <li class="story__item title story__item--house">
+            <div class="story__benefit">
               <h2 class="story__title">жилье</h2>
               <p class="story__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </li>
-          <li class="story__item title">
-            <div class="story__piece">
+          <li class="story__item title story__item--burger">
+            <div class="story__benefit">
               <h2 class="story__title title__story">еда</h2>
               <p class="story__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
-          <li class="story__item title">
-            <div class="story__piece">
+          <li class="story__item title story__item--gift">
+            <div class="story__benefit">
               <h2 class="story__title title__story">сувениры</h2>
               <p class="story__description">не только китайского, но и местного производства!</p>
             </div>
@@ -121,7 +128,7 @@
             <div class="story__piece">
               <h2 class="story__title-rank">мало туристов</h2>
               <p class="story__numbering">— №5 —</p>
-              <p class="story__description">большинство едет в гранд каньон и толпится там</p>
+              <p class="story__description-rank">большинство едет в гранд каньон и толпится там</p>
             </div>
           </li>
         </ul>
@@ -129,14 +136,17 @@
       <section class="search-hotels">
         <div class="search-hotels__piece">
           <h2 class="search-hotels__title">Заинтересовались?</h2>
-          <p class="search-hotels__description">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          <p class="search-hotels__description">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
             гостиниц в седоне</p>
           <a class="search-hotels__button" href="catalog.html">найти гостиницу</a>
         </div>
       </section>
       <section class="location">
         <h2 class="visually-hidden">местоположение седоны.</h2>
-        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937305.241858962!2d-113.27109879541032!3d34.830669755307746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681286371411!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="location__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937305.241858962!2d-113.27109879541032!3d34.830669755307746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681286371411!5m2!1sru!2sru"
+          width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="page-footer">
@@ -197,6 +207,7 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -12,14 +12,30 @@ $color-paragraph: #333333;
 
 // background
 
+$background-contain: #e7e5e5;
+
 $environment-background: #81b3d2;
 
 $background-main: #ffffff;
 
-$background-cards: #F2F2F2;
+$background-item: #eeeeee;
+
+$background-cards: #f2f2f2;
 
 $background-cards-north: #eaeaea;
 
+$transparent: transparent;
+
 // outline
 
-$outline: 2px solid #40106f;
+$border: #e5e5e5;
+
+$outline: none;
+
+// Viewports
+
+$tablet-width: 768px;
+
+$desktop-width: 1200px;
+
+$mobile-width-only: 767px;
