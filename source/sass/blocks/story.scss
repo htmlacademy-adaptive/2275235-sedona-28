@@ -105,6 +105,10 @@
   border-bottom: 1px solid #d6d6d6;
 }
 
+.story__description-last {
+  padding: 20px 18px 49px 18px;
+}
+
 .story__piece {
   padding: 0 18px;
   margin: 0;
@@ -182,6 +186,10 @@
     border: none;
   }
 
+  .story__description-last {
+    padding: 33px 15px 60px;
+  }
+
   .story__item {
     min-height: 256px;
   }
@@ -254,5 +262,9 @@
   .story__description-rank {
     padding: 35px 50px 57px;
     border: none;
+  }
+
+  .story__description-last {
+    padding: 35px 50px 57px;
   }
 }
