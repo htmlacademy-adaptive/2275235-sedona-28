@@ -10,3 +10,26 @@
 .feedback__description {
   margin-bottom: 53px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback__title {
+    font-size: 30px;
+    line-height: 0.87;
+    margin: 64px 0 20px;
+  }
+
+  .feedback__description {
+    margin: 0 166px 108px
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__title {
+    margin: 115px 0 31px;
+  }
+
+  .feedback__description {
+    margin: 0 382px 68px
+  }
+
+}

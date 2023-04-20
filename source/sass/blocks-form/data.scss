@@ -1,7 +1,17 @@
+.data__container {
+  padding: 0 18px;
+}
+
 .data__section {
   text-align: start;
-  margin-bottom: 64px;
-  padding-left: 18px;
+  margin-bottom: 59px;
+  padding: 0;
+  border: none;
+}
+
+.data__section::after {
+  position: absolute;
+  border-top: 1px solid $border;
 }
 
 .data__title-legend {
@@ -9,7 +19,7 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .data__input {
@@ -37,12 +47,14 @@
 .data__title {
   display: flex;
   font-size: 14px;
+  margin-left: 16px;
 }
 
 .data__feedback {
   margin-bottom: 64px;
   text-align: start;
-  padding-left: 18px;
+  padding: 0;
+  border: none;
 }
 
 .data__btn {
@@ -58,7 +70,6 @@
 .data__send {
   display: flex;
   justify-content: flex-end;
-  margin-right: 18px;
   opacity: 60%;
 }
 
@@ -78,16 +89,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .data__title-legend {
+    font-size: 21px;
+    line-height: 1.24;
+    margin-top: 48px;
+    margin-bottom: 28px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
   .data__container {
     padding: 0 60px;
-    margin-left: auto;
     display: grid;
-    grid-template-columns: 324px 324px;
   }
 
   .data__section {
     grid-column: 1/2;
     padding-left: 0;
+    padding-right: 29px;
+    margin-right: 29px;
+    margin-left: 0;
+    border-right: 1px solid $border;
   }
 
   .data__feedback:nth-child(n+3) {
@@ -97,6 +119,12 @@
   .data__feedback {
     position: relative;
     padding: 0;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
+    border-top: 1px solid $border;
   }
 
   .data__send {
@@ -116,10 +144,14 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .data__container {
-    padding: 0 120px;
     grid-template-columns: 480px 480px;
+    padding: 0 120px;
+  }
+
+  .data__input {
+    width: 430px;
   }
 
   .data__textbox-input {
@@ -129,9 +161,35 @@
     margin-right: auto;
   }
 
+  .data__section {
+    margin-right: 49.5px;
+    padding-right: 49.5px;
+  }
+
   .data__feedback:nth-child(n+3) {
-    width: 768px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .data__feedback:nth-child(2) {
+    margin-left: 49.5px;
+  }
+
+  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
+    border-top: 1px solid $border;
+  }
+
+  .data__title-legend {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .data__send {
+    right: 96px;
+  }
+
+  .data__btn {
+    margin-left: 96px;
   }
 }
