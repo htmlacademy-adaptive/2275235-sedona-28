@@ -4,11 +4,22 @@
   line-height: 1.44;
   font-weight: 700;
   margin-bottom: 33px;
+  position: relative;
 }
 
 .handset__subscribe-title {
   display: flex;
   margin-left: 20px;
+}
+
+.handset__feedback::after {
+  content: "";
+  position: absolute;
+  width: 120vw;
+  height: 1px;
+  background-color: $border;
+  right: -90px;
+  top: -24px;
 }
 
 .handset__subscribe-input-email {
@@ -18,7 +29,7 @@
   padding-right: 58px;
   margin-right: 0;
   margin-bottom: 16px;
-  background: url("../img/mobile/icon/mail.svg") center right 20px no-repeat;
+  background: url("../img/mobile/icon/mail.svg") center right no-repeat;
 }
 
 .handset__subscribe-input-tel {
@@ -28,7 +39,7 @@
   padding-right: 58px;
   margin-right: 0;
   margin-bottom: 16px;
-  background: url("../img/mobile/icon/phone.svg") center right 20px no-repeat;
+  background: url("../img/mobile/icon/phone.svg") center right no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,6 +48,10 @@
     font-size: 21px;
     line-height: 1.24;
     margin-bottom: 28px;
+  }
+
+  .handset__feedback::after {
+    display: none;
   }
 
   .handset__subscribe-input-tel {

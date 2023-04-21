@@ -20,6 +20,17 @@
   line-height: 1.44;
   font-weight: 700;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.data__title-legend::after {
+  content: "";
+  position: absolute;
+  width: 120vw;
+  height: 1px;
+  background-color: $border;
+  right: -90px;
+  top: -24px;
 }
 
 .data__input {
@@ -98,18 +109,32 @@
     padding-right: 65px;
   }
 
+  .data__title-legend::after {
+    display: none;
+  }
+
   .data__container {
     padding: 0 60px;
     display: grid;
   }
 
   .data__section {
+    position: relative;
     grid-column: 1/2;
     padding-left: 0;
     padding-right: 29px;
     margin-right: 29px;
     margin-left: 0;
-    border-right: 1px solid $border;
+  }
+
+  .data__section::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 338px;
+    background-color: $border;
+    right: -1px;
+    top: -60px;
   }
 
   .data__feedback:nth-child(n+3) {

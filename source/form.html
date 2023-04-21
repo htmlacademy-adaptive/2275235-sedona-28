@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <div class="page__content">
-      <header class="page-header">
-        <nav class="main-nav">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <div class="page__content">
+    <header class="page-header">
+      <div class="page-header__nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-              <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+            <svg class="main-nav__opened" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#81B3D2"
+              viewBox="0 0 23 22">
+              <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
             </svg>
             <span class="visually-hidden">Открыть меню.</span>
+            <svg class="main-nav__closed" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#ffffff"
+              viewBox="0 0 23 22">
+              <path
+                d="M22.2 3.18 19.4.47 11.1 8.5 2.8.47 0 3.17l8.3 8.05L0 19.26l2.8 2.7 8.3-8.03 8.3 8.04 2.8-2.71-8.3-8.04 8.3-8.04Z" />
+            </svg>
+            <span class="visually-hidden">Закрыть меню.</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -45,19 +55,22 @@
               alt="Логотип Города Седона.">
           </a>
         </div>
-      </header>
-      <main class="page-feedback">
-        <section class="welcome">
-          <div class="welcome__backdrop">
-            <h1 class="visually-hidden">"Cедона."</h1>
-            <img class="welcome__image" src="img/mobile/sedona.svg" width="229" height="39" alt="приветствует седона.">
-          </div>
-          </section>
-        <section class="feedback">
-          <h2 class="feedback__title">Оставьте свой отзыв</h2>
-          <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </section>
-        <form class="data page-feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+      </div>
+    </header>
+    <main class="page-feedback">
+      <section class="welcome">
+        <div class="welcome__backdrop">
+          <h1 class="visually-hidden">"Cедона."</h1>
+          <img class="welcome__image" src="img/mobile/sedona.svg" width="229" height="39" alt="приветствует седона.">
+        </div>
+      </section>
+      <section class="feedback">
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами достопримечательностях</p>
+      </section>
+      <form class="data page-feedback__form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="data__container">
           <fieldset class="data__section">
             <legend class="data__title-legend">Представьтесь:</legend>
             <label class="data__title" for="firstname">имя*:</label>
@@ -73,8 +86,8 @@
             <input class="handset__subscribe-input-tel" type="tel" name="phone" id="phone" placeholder="Введите телефон"
               required>
             <label class="handset__subscribe-title" for="email">Электронная почта*:</label>
-            <input class="handset__subscribe-input-email" type="email" name="email" id="email" placeholder="Введите e-mail"
-              required>
+            <input class="handset__subscribe-input-email" type="email" name="email" id="email"
+              placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="data__feedback response">
             <legend class="data__title-legend">ваше общее впечатление:</legend>
@@ -144,9 +157,11 @@
             <input class="data__btn" type="submit" value="отправить отзыв">
             <span class="data__send">* — обязательные поля</span>
           </fieldset>
-        </form>
-      </main>
-      <footer class="page-footer">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__connection">
         <p class="page-footer__hashtag">#visitsedona</p>
         <div class="social">
           <ul class="social__list">
@@ -190,26 +205,36 @@
             </li>
           </ul>
         </div>
-        <p class="page-footer__copyright">разработано</p>
-        <a href="https://up.htmlacademy.ru/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35"><path fill="#000" d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z"/></svg>
-          <span class="visually-hidden">сайт академии.</span>
-        </a>
-      </footer>
-      <div class="modal-failure">
-        <div class="modal-failure__hide">
-          <h2 class="modal-failure__title">что-то пошло не так!</h2>
-          <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal-failure__btn" type="button">ок</button>
+        <div class="page-footer__academy">
+          <p class="page-footer__copyright">разработано</p>
+          <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+              <path fill="#000"
+                d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+            </svg>
+            <span class="visually-hidden">сайт академии.</span>
+          </a>
         </div>
       </div>
-      <div class="modal-success">
-        <div class="modal-success__hide">
-          <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
-          <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="modal-success__btn" type="button">закрыть окно</button>
-        </div>
+    </footer>
+    <div class="modal-failure">
+      <div class="modal-failure__hide">
+        <h2 class="modal-failure__title">что-то пошло не так!</h2>
+        <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="modal-failure__btn" type="button">ок</button>
       </div>
     </div>
-  </body>
+    <div class="modal-success">
+      <div class="modal-success__hide">
+        <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
+        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+          мы опубликуем его на сайте.</p>
+        <button class="modal-success__btn" type="button">закрыть окно</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -9,6 +9,7 @@
 
 @media (min-width: $tablet-width) {
   .page__content {
+    position: relative;
     width: 768px;
   }
 }
