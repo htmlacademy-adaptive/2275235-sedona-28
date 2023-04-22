@@ -59,6 +59,15 @@
     position: relative;
   }
 
+  .cards__item img {
+    width: 100%;
+    height: 267px;
+  }
+
+  .cards__item--big img {
+    height: 400px;
+  }
+
   .cards__item:first-child {
     grid-column: 1/3;
   }
@@ -78,7 +87,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .cards__list {
     padding: 0;
     grid-template-columns: 400px 400px 400px;
@@ -92,5 +101,22 @@
     position: absolute;
     left: 20px;
     bottom: 17px;
+  }
+
+  .cards__title {
+    color: $color-main;
+  }
+
+  .cards__creator {
+    color: $color-main;
+  }
+
+  .cards__link-text {
+    color: $color-main;
+  }
+
+  .cards__like {
+    fill: $color-main;
+    opacity: 1;
   }
 }

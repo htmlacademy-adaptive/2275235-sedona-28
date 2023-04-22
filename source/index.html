@@ -77,7 +77,12 @@
             </div>
           </li>
           <li class="story__highlights-img">
-            <img class="story__img" src="img/mobile/hotel.jpg" width="320" height="260" alt="отель.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/desktop/hotel.jpg 1x, img/desktop/hotel@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/tablet/hotel.jpg 1x, img/tablet/hotel@2x.jpg 2x">
+              <img class="story__img" src="img/mobile/hotel.jpg" srcset="img/mobile/hotel@2x.jpg 2x" width="320"
+                height="260" alt="отель.">
+            </picture>
           </li>
           <li class="story__item title story__item--house">
             <div class="story__benefit">
@@ -105,9 +110,13 @@
             </div>
           </li>
           <li class="story__preeminence-img">
-            <img class="story__img" src="img/mobile/bridge.jpg" width="320" height="260" alt="мост.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/desktop/bridge.jpg 1x, img/desktop/bridge@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/tablet/bridge.jpg 1x, img/tablet/bridge@2x.jpg 2x">
+              <img class="story__img" src="img/mobile/bridge.jpg" srcset="img/mobile/bridge@2x.jpg 2x" width="320"
+                height="260" alt="мост.">
+            </picture>
           </li>
-
           <li class="story__item">
             <div class="story__piece">
               <h2 class="story__title-rank">небольшая площадь</h2>
