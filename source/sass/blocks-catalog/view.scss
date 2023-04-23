@@ -20,6 +20,21 @@
   height: 177px;
 }
 
+.view__presentation {
+  position: relative;
+}
+
+.view__presentation::after {
+  content: "";
+  background-image: url("../img/mobile/polygon.png");
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
 @media (min-width: $tablet-width) {
   .view__title {
     font-size: 30px;
