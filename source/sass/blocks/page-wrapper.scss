@@ -2,6 +2,18 @@
   background: url("../img/mobile/back-mobile.jpg") no-repeat;
   background-color: $environment-background;
   min-height: 389px;
+  padding-top: 40px;
+}
+
+.page-wrapper__chapter::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mobile/zig-zag.svg");
+  width: 1200px;
+  height: 57px;
+  top: 617px;
+  left: 224px;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
