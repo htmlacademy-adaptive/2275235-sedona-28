@@ -1,5 +1,5 @@
 .page-wrapper__chapter {
-  background: url("../img/mobile/background-mobile.jpg") no-repeat;
+  background: url("../img/mobile/back-mobile.jpg") no-repeat;
   background-color: $environment-background;
   min-height: 389px;
 }
@@ -9,6 +9,15 @@
     background: url("../img/tablet/back-tablet.jpg") no-repeat;
     background-color: $environment-background;
     min-height: 518px;
+  }
+}
+
+
+@media (min-resolution: 2dppx) {
+  .page-wrapper__chapter {
+    background-image: url("../img/tablet/back-tablet@2x.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 

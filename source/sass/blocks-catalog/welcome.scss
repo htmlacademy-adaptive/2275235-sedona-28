@@ -16,6 +16,14 @@
   }
 }
 
+@media (min-resolution: 2dppx) {
+  .welcome__backdrop {
+    background-image: url("../img/tablet/back-desktop@2x.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media (min-width: 1200px) {
   .welcome__backdrop {
     background-size: cover;

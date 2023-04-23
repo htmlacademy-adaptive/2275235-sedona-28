@@ -14,17 +14,19 @@
   padding-bottom: 11px;
   font-size: 18px;
   line-height: 1.44;
+  margin: 0;
 }
 
 .story__highlights-numbering {
   color: $color-main;
   padding-bottom: 17px;
+  margin: 0;
 }
 
 .story__highlights-description {
   color: $color-main;
   padding-bottom: 37px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .story__highlights-img,
@@ -32,13 +34,14 @@
   background-color: $environment-background;
   list-style: none;
   min-height: 211px;
+  height: 256px;
 }
 
 .story__preeminence-img,
 .story__highlights-item {
   background-color: $environment-background;
   list-style: none;
-  min-height: 211px;
+  height: 256px;
 }
 
 .story__preeminence-title {
@@ -140,11 +143,12 @@
 
   .story__highlights-item {
     grid-column: 1/2;
-    min-height: 256px;
+    height: 256px;
   }
 
   .story__highlights-img {
     grid-column: 2/4;
+
   }
 
   .story__highlights-img img {
@@ -175,10 +179,6 @@
   .story__description {
     text-align: center;
     padding: 0;
-  }
-
-  .story__item {
-    min-height: 256px;
   }
 
   .story__description-rank {
