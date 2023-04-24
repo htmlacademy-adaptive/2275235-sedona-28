@@ -5,8 +5,8 @@
 @media (min-width: $tablet-width) {
   .choice__list {
     display: grid;
-    width: 648px;
-    grid-template-columns: 1fr 1fr;
+    min-width: 648px;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 90px;
   }
 }
@@ -14,7 +14,7 @@
 @media (min-width: $desktop-width) {
   .choice__list {
     width: 960px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     padding-left: 20px;
   }

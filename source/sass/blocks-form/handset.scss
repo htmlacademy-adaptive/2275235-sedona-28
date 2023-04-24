@@ -15,10 +15,10 @@
 .handset__feedback::after {
   content: "";
   position: absolute;
-  width: 120vw;
+  width: 350vw;
   height: 1px;
   background-color: $border;
-  right: -90px;
+  right: -270px;
   top: -24px;
 }
 
