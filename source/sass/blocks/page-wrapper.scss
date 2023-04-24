@@ -11,8 +11,9 @@
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 617px;
-  left: 224px;
+  top: 637px;
+  right: 50%;
+  transform: translate(50%, -50%);
   background-repeat: no-repeat;
 }
 
@@ -21,6 +22,10 @@
     background: url("../img/tablet/back-tablet.jpg") no-repeat;
     background-color: $environment-background;
     min-height: 518px;
+  }
+
+  .page-wrapper__chapter::before{
+    top: 546px;
   }
 }
 
