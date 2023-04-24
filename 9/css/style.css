@@ -32,6 +32,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.5;
+  margin: 0 auto;
 }
 
 .advantages__title {
@@ -97,6 +98,8 @@ body {
 
 .main-nav__list {
   max-height: 223px;
+  width: 100%;
+  position: absolute;
   padding: 0px;
   background-color: #81b3d2;
   margin: 0 auto;
@@ -247,7 +250,7 @@ body {
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 637px;
+  top: 417px;
   right: 50%;
   transform: translate(50%, -50%);
   background-repeat: no-repeat;
@@ -261,7 +264,7 @@ body {
   }
 
   .page-wrapper__chapter::before {
-    top: 546px;
+    top: 490px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
