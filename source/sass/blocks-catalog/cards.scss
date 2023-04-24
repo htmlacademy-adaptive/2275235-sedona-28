@@ -43,7 +43,7 @@
     padding: 0 60px;
     margin-left: auto;
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cards__block {
@@ -60,6 +60,7 @@
   }
 
   .cards__item img {
+    max-width: 100%;
     width: 100%;
     height: 267px;
   }
@@ -90,7 +91,7 @@
 @media (min-width: $desktop-width) {
   .cards__list {
     padding: 0;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cards__item:first-child {
