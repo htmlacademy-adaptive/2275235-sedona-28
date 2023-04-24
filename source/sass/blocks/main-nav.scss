@@ -4,6 +4,8 @@
 
 .main-nav__list {
   max-height: 223px;
+  width: 100%;
+  position: absolute;
   padding: 0px;
   background-color: $environment-background;
   margin: 0 auto;
