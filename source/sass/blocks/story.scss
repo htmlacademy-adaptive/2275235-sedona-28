@@ -33,7 +33,6 @@
 .story__preeminence-item {
   background-color: $environment-background;
   list-style: none;
-  min-height: 211px;
   height: 256px;
 }
 
@@ -42,6 +41,11 @@
   background-color: $environment-background;
   list-style: none;
   height: 256px;
+}
+
+.story__img {
+  width: 100%;
+  height: 260px;
 }
 
 .story__preeminence-title {
