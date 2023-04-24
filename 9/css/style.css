@@ -134,7 +134,7 @@ body {
   top: 212px;
   left: 0;
   z-index: 2;
-  width: 320px;
+  width: 120vw;
   height: 7px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
@@ -247,8 +247,9 @@ body {
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 617px;
-  left: 224px;
+  top: 637px;
+  right: 50%;
+  transform: translate(50%, -50%);
   background-repeat: no-repeat;
 }
 
@@ -257,6 +258,10 @@ body {
     background: url("../img/tablet/back-tablet.jpg") no-repeat;
     background-color: #81b3d2;
     min-height: 518px;
+  }
+
+  .page-wrapper__chapter::before {
+    top: 546px;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -765,7 +770,7 @@ br {
     padding: 0 60px;
     margin-left: auto;
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cards__block {
@@ -782,6 +787,7 @@ br {
   }
 
   .cards__item img {
+    max-width: 100%;
     width: 100%;
     height: 267px;
   }
@@ -811,7 +817,7 @@ br {
 @media (min-width: 1200px) {
   .cards__list {
     padding: 0;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cards__item:first-child {
@@ -980,15 +986,15 @@ br {
 @media (min-width: 768px) {
   .choice__list {
     display: grid;
-    width: 648px;
-    grid-template-columns: 1fr 1fr;
+    min-width: 648px;
+    grid-template-columns: repeat(2, 1fr);
     padding-left: 90px;
   }
 }
 @media (min-width: 1200px) {
   .choice__list {
     width: 960px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     padding-left: 20px;
   }
@@ -1029,10 +1035,10 @@ br {
 .data__title-legend::after {
   content: "";
   position: absolute;
-  width: 120vw;
+  width: 350vw;
   height: 1px;
   background-color: #e5e5e5;
-  right: -90px;
+  right: -320px;
   top: -24px;
 }
 
@@ -1270,10 +1276,10 @@ br {
 .handset__feedback::after {
   content: "";
   position: absolute;
-  width: 120vw;
+  width: 350vw;
   height: 1px;
   background-color: #e5e5e5;
-  right: -90px;
+  right: -270px;
   top: -24px;
 }
 
