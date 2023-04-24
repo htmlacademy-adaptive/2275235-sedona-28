@@ -156,6 +156,7 @@ body {
   .main-nav__list {
     background-color: #ffffff;
     display: flex;
+    justify-content: space-between;
     min-height: 56px;
     top: 0;
     margin: 0;
@@ -218,6 +219,9 @@ body {
 }
 .page-header__logo-image {
   height: 56px;
+  top: 0;
+  right: calc(50% - 92.5px);
+  z-index: 3;
 }
 
 @media (min-width: 768px) {
@@ -228,12 +232,6 @@ body {
   .page-header__logo-image {
     position: absolute;
     top: 0px;
-    right: 291.5px;
-  }
-}
-@media (min-width: 1200px) {
-  .page-header__logo-image {
-    right: 507.5px;
   }
 }
 .page-wrapper__chapter {
@@ -276,7 +274,7 @@ body {
   }
 }
 .page__content {
-  width: 320px;
+  min-width: 320px;
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
@@ -287,18 +285,18 @@ body {
 @media (min-width: 768px) {
   .page__content {
     position: relative;
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   .page__content {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
 .site-list__item {
   list-style: none;
-  width: 320px;
+  min-width: 320px;
   height: 55px;
   margin: 0px;
   padding: 0px;
@@ -336,7 +334,7 @@ body {
   }
 
   .site-list__item {
-    width: 153px;
+    min-width: 153px;
     border: none;
   }
 
@@ -350,7 +348,7 @@ body {
 }
 @media (min-width: 1200px) {
   .site-list__item {
-    width: 240px;
+    min-width: 240px;
   }
 
   .site-list__item:nth-child(2n+2) {
@@ -379,7 +377,7 @@ body {
 .search-hotels__button {
   background-color: #81b3d2;
   display: block;
-  width: 284px;
+  min-width: 284px;
   font-weight: 700;
   padding: 16px 49px;
   color: #ffffff;
@@ -420,7 +418,8 @@ br {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  margin-left: 82px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   margin-top: 36px;
 }
@@ -508,6 +507,8 @@ br {
   margin: 0px;
   padding: 0px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .story__items {
@@ -569,8 +570,8 @@ br {
 @media (min-width: 768px) {
   .story__list {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
-    width: 768px;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 768px;
   }
 
   .story__piece {
@@ -628,7 +629,7 @@ br {
   .story__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1200px;
+    max-width: 1200px;
   }
 
   .story__highlights-item {
