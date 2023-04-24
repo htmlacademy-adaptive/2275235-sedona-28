@@ -1,5 +1,8 @@
 .page-header__logo-image {
   height: 56px;
+  top: 0;
+  right: calc(50% - 185px / 2);
+  z-index: 3;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,12 +13,5 @@
   .page-header__logo-image {
     position: absolute;
     top: 0px;
-    right: 291.5px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .page-header__logo-image {
-    right: 507.5px;
   }
 }

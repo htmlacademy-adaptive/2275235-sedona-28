@@ -72,6 +72,8 @@
   margin: 0px;
   padding: 0px;
   background-color: $background-main;
+  display: flex;
+  flex-direction: column;
 }
 
 .story__items {
@@ -130,11 +132,11 @@
   background: url("../img/mobile/icon/icon-gift.svg") no-repeat top 23px left 18px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .story__list {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
-    width: 768px;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 768px;
   }
 
   .story__piece {
@@ -190,11 +192,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .story__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1200px;
+    max-width: 1200px;
   }
 
   .story__highlights-item {
