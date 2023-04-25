@@ -386,6 +386,7 @@ body {
   background-color: #81b3d2;
   display: block;
   min-width: 284px;
+  max-width: 458px;
   font-weight: 700;
   padding: 16px 49px;
   color: #ffffff;
@@ -772,6 +773,11 @@ br {
   margin-left: 14px;
 }
 
+.cards__images {
+  height: 280px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .cards__list {
     padding: 0 60px;
@@ -1087,7 +1093,8 @@ br {
 .data__btn {
   font-size: 21px;
   line-height: 1.24;
-  width: 280px;
+  min-width: 280px;
+  max-width: 324px;
   height: 58px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -1123,6 +1130,11 @@ br {
     margin-bottom: 28px;
     padding-left: 65px;
     padding-right: 65px;
+  }
+
+  .data__btn {
+    min-width: 324px;
+    max-width: 384px;
   }
 
   .data__title-legend::after {
@@ -1188,6 +1200,11 @@ br {
   .data__container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 120px;
+  }
+
+  .data__btn {
+    width: 324px;
+    width: 384px;
   }
 
   .data__input {
