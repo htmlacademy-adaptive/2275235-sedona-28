@@ -49,7 +49,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .main-nav__list,
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
