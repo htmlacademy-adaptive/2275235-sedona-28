@@ -71,7 +71,8 @@
 .data__btn {
   font-size: 21px;
   line-height: 1.24;
-  width: 280px;
+  min-width: 280px;
+  max-width: 324px;
   height: 58px;
   color: $color-main;
   background-color: $environment-background;
@@ -107,6 +108,11 @@
     margin-bottom: 28px;
     padding-left: 65px;
     padding-right: 65px;
+  }
+
+  .data__btn {
+    min-width: 324px;
+    max-width: 384px;
   }
 
   .data__title-legend::after {
@@ -173,6 +179,11 @@
   .data__container {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 120px;
+  }
+
+  .data__btn {
+    width: 324px;
+    width: 384px;
   }
 
   .data__input {

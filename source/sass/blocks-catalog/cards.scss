@@ -38,6 +38,11 @@
   margin-left: 14px;
 }
 
+.cards__images {
+  height: 280px;
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .cards__list {
     padding: 0 60px;
