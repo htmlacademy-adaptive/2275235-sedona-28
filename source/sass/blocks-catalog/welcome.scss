@@ -3,6 +3,13 @@
   background-color: $environment-background;
 }
 
+.welcome__backdrop-form {
+  background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom center;
+  background-size: 923px 410px;
+  background-color: $environment-background;
+  min-height: 159px;
+}
+
 .welcome__image {
   margin-top: 52px;
   margin-bottom: 67px;
@@ -14,19 +21,40 @@
     background-color: $environment-background;
     min-height: 290px;
   }
-}
 
-@media (min-resolution: 2dppx) {
-  .welcome__backdrop {
-    background-image: url("../img/tablet/back-desktop@2x.jpg");
-    background-size: cover;
-    background-position: center;
+  .welcome__image {
+    margin: 108px 0 0;
+    width: 457px;
+    height: 78px;
   }
 }
 
-@media (min-width: 1200px) {
-  .welcome__backdrop {
-    background-size: cover;
-    min-height: 518px;
+  @media (min-resolution: 2dppx) {
+    .welcome__backdrop {
+      background-image: url("../img/tablet/back-desktop@2x.jpg");
+      background-position: center;
+    }
   }
-}
+
+  @media (min-width: $desktop-width) {
+    .welcome__backdrop {
+      background-size: cover;
+      min-height: 518px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .welcome__backdrop-form {
+      background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+      background-color: $environment-background;
+      min-height: 357px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .welcome__backdrop-form {
+      background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+      background-color: $environment-background;
+      min-height: 357px;
+    }
+  }

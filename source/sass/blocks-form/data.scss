@@ -55,6 +55,12 @@
   color: $color-title;
 }
 
+.data__feedback input[type=tel],
+.data__feedback input[type=email]::placeholder {
+  font-size: 18px;
+  line-height: 1.44;
+}
+
 .data__title {
   display: flex;
   font-size: 14px;
