@@ -97,9 +97,6 @@ body {
 }
 
 .main-nav__list {
-  max-height: 223px;
-  width: 100%;
-  position: absolute;
   padding: 0px;
   background-color: #81b3d2;
   margin: 0 auto;
@@ -115,6 +112,23 @@ body {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.main-nav,
+.main-nav--opened {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fff;
+}
+
+.main-nav--closed .main-nav__closed,
+.main-nav--opened .main-nav__opened {
+  display: none;
 }
 
 .main-nav--closed .main-nav__closed {
@@ -134,7 +148,7 @@ body {
 .main-nav--opened .site-list__item:last-child::before {
   content: "";
   position: absolute;
-  top: 212px;
+  top: 216px;
   left: 0;
   z-index: 2;
   width: 120vw;
@@ -968,6 +982,13 @@ br {
   background-color: #81b3d2;
 }
 
+.welcome__backdrop-form {
+  background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom center;
+  background-size: 923px 410px;
+  background-color: #81b3d2;
+  min-height: 159px;
+}
+
 .welcome__image {
   margin-top: 52px;
   margin-bottom: 67px;
@@ -979,11 +1000,16 @@ br {
     background-color: #81b3d2;
     min-height: 290px;
   }
+
+  .welcome__image {
+    margin: 108px 0 0;
+    width: 457px;
+    height: 78px;
+  }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .welcome__backdrop {
     background-image: url("../img/tablet/back-desktop@2x.jpg");
-    background-size: cover;
     background-position: center;
   }
 }
@@ -991,6 +1017,20 @@ br {
   .welcome__backdrop {
     background-size: cover;
     min-height: 518px;
+  }
+}
+@media (min-width: 768px) {
+  .welcome__backdrop-form {
+    background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+    background-color: #81b3d2;
+    min-height: 357px;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome__backdrop-form {
+    background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+    background-color: #81b3d2;
+    min-height: 357px;
   }
 }
 .choice__item {
@@ -1076,6 +1116,12 @@ br {
 
 .data__section input[type=text]::placeholder {
   color: #000000;
+}
+
+.data__feedback input[type=tel],
+.data__feedback input[type=email]::placeholder {
+  font-size: 18px;
+  line-height: 1.44;
 }
 
 .data__title {
