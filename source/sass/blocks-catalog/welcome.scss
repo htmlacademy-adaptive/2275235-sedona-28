@@ -15,11 +15,32 @@
   margin-bottom: 67px;
 }
 
+.welcome__backdrop::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mobile/zig-zag.svg");
+  width: 1200px;
+  height: 57px;
+  top: 193px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-repeat: no-repeat;
+}
+
+.main__nav--closed .welcome__backdrop::before {
+  top: 1px;
+
+}
+
 @media (min-width: $tablet-width) {
   .welcome__backdrop {
     background: url("../img/tablet/back-main.jpg") no-repeat;
     background-color: $environment-background;
     min-height: 290px;
+  }
+
+  .welcome__backdrop::before {
+    top: 319px;
   }
 
   .welcome__image {
@@ -41,6 +62,22 @@
       background-size: cover;
       min-height: 518px;
     }
+
+    .welcome__backdrop::before {
+      top: 546px;
+    }
+  }
+
+  .welcome__backdrop-form::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/mobile/zig-zag.svg");
+    width: 1200px;
+    height: 57px;
+    top: 193px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
@@ -48,6 +85,10 @@
       background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
       background-color: $environment-background;
       min-height: 357px;
+    }
+
+    .welcome__backdrop-form::before {
+      top: 385px;
     }
   }
 

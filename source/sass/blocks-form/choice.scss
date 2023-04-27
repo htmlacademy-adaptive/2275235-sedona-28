@@ -1,5 +1,11 @@
 .choice__item {
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+  position: relative;
+  display: block;
+}
+
+.choice__list {
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -7,15 +13,34 @@
     display: grid;
     min-width: 648px;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 90px;
+    padding: 0;
+  }
+
+  .choice__item {
+    margin-left: 84px;
+  }
+
+  .choice__item:nth-child(2n) {
+    margin-left: 32px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .choice__list {
     width: 960px;
+    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding-left: 20px;
+  }
+
+  .choice__item:first-child {
+    margin-left: 44px;
+  }
+
+  .choice__item:nth-child(2n) {
+    margin: 0;
+  }
+
+  .choice__item {
+    margin-left: 0;
   }
 }

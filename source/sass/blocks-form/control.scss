@@ -4,4 +4,50 @@
   line-height: 1.44;
   font-weight: 700;
   text-transform: none;
+  margin-left: 62px;
+}
+
+.control__input[type=radio]+.control__mark {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.control__input[type=radio]:checked+.control__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: $color-paragraph;
+  border-radius: 50%;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: $background-cards;
+}
+
+.control__input[type=checkbox]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/mobile/icon/tick.svg");
+  background-color: $background-cards;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
