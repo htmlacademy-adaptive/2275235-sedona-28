@@ -1,5 +1,10 @@
 .page-header__logo-image {
   height: 56px;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
   top: 0;
   right: calc(50% - 185px / 2);
   z-index: 3;
