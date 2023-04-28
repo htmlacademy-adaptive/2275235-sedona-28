@@ -40,7 +40,7 @@
   background-color: $background-cards;
 }
 
-.control__input[type=checkbox]:checked + .control__mark::before {
+.control__input[type=checkbox]:checked+.control__mark::before {
   content: "";
   position: absolute;
   width: 46px;
