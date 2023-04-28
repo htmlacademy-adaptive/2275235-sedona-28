@@ -52,52 +52,52 @@
   }
 }
 
-  @media (min-resolution: 2dppx) {
-    .welcome__backdrop {
-      background-image: url("../img/tablet/back-desktop@2x.jpg");
-      background-position: center;
-    }
+@media (min-resolution: 2dppx) {
+  .welcome__backdrop {
+    background-image: url("../img/tablet/back-desktop@2x.jpg");
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome__backdrop {
+    background-size: cover;
+    min-height: 518px;
   }
 
-  @media (min-width: $desktop-width) {
-    .welcome__backdrop {
-      background-size: cover;
-      min-height: 518px;
-    }
+  .welcome__backdrop::before {
+    top: 490px;
+  }
+}
 
-    .welcome__backdrop::before {
-      top: 490px;
-    }
+.welcome__backdrop-form::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mobile/zig-zag.svg");
+  width: 1200px;
+  height: 57px;
+  top: 136px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome__backdrop-form {
+    background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+    background-color: $environment-background;
+    min-height: 357px;
   }
 
   .welcome__backdrop-form::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/mobile/zig-zag.svg");
-    width: 1200px;
-    height: 57px;
-    top: 136px;
-    right: 50%;
-    transform: translate(50%, -50%);
-    background-repeat: no-repeat;
+    top: 329px;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    .welcome__backdrop-form {
-      background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
-      background-color: $environment-background;
-      min-height: 357px;
-    }
-
-    .welcome__backdrop-form::before {
-      top: 329px;
-    }
+@media (min-width: $desktop-width) {
+  .welcome__backdrop-form {
+    background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
+    background-color: $environment-background;
+    min-height: 357px;
   }
-
-  @media (min-width: $desktop-width) {
-    .welcome__backdrop-form {
-      background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
-      background-color: $environment-background;
-      min-height: 357px;
-    }
-  }
+}
