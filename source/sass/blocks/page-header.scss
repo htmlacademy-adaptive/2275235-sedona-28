@@ -16,7 +16,12 @@
   }
 
   .page-header__logo-image {
+    height: 0;
+    position: relative;
+  }
+
+  .page-header__logo {
     position: absolute;
-    top: 0px;
+    top: -56px;
   }
 }
