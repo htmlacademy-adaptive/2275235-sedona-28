@@ -1,6 +1,7 @@
 .welcome__backdrop {
   background: url("../img/mobile/back-desktop.jpg") no-repeat;
   background-color: $environment-background;
+  position: relative;
 }
 
 .welcome__backdrop-form {
@@ -8,6 +9,7 @@
   background-size: 923px 410px;
   background-color: $environment-background;
   min-height: 159px;
+  position: relative;
 }
 
 .welcome__image {
@@ -21,7 +23,7 @@
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 193px;
+  top: 136px;
   right: 50%;
   transform: translate(50%, -50%);
   background-repeat: no-repeat;
@@ -40,7 +42,7 @@
   }
 
   .welcome__backdrop::before {
-    top: 319px;
+    top: 263px;
   }
 
   .welcome__image {
@@ -64,7 +66,7 @@
     }
 
     .welcome__backdrop::before {
-      top: 546px;
+      top: 490px;
     }
   }
 
@@ -74,7 +76,7 @@
     background-image: url("../img/mobile/zig-zag.svg");
     width: 1200px;
     height: 57px;
-    top: 193px;
+    top: 136px;
     right: 50%;
     transform: translate(50%, -50%);
     background-repeat: no-repeat;
@@ -88,7 +90,7 @@
     }
 
     .welcome__backdrop-form::before {
-      top: 385px;
+      top: 329px;
     }
   }
 

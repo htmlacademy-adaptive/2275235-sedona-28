@@ -3,6 +3,7 @@
   background-color: $environment-background;
   min-height: 389px;
   padding-top: 40px;
+  position: relative;
 }
 
 .page-wrapper__chapter::before {
@@ -11,7 +12,7 @@
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 417px;
+  top: 362px;
   right: 50%;
   transform: translate(50%, -50%);
   background-repeat: no-repeat;
@@ -25,7 +26,7 @@
   }
 
   .page-wrapper__chapter::before {
-    top: 546px;
+    top: 490px;
   }
 }
 
