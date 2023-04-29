@@ -128,11 +128,10 @@
 .story__item--house {
   &::after {
     content: "";
-    mask-image: url("../img/mobile/icon/icon-house.svg");
+    background-image: url("../img/mobile/icon/icon-house.svg");
     position: absolute;
     width: 40px;
     height: 38px;
-    background-color: $environment-background;
     top: 23px;
     left: 18px;
     background-repeat: no-repeat;
@@ -143,28 +142,28 @@
 .story__item--burger {
   &::after {
     content: "";
-    mask-image: url("../img/mobile/icon/icon-burger.svg");
+    background-image: url("../img/mobile/icon/icon-burger.svg");
     position: absolute;
     width: 40px;
     height: 36px;
-    background-color: $environment-background;
     top: 23px;
     left: 18px;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
 .story__item--gift {
   &::after {
     content: "";
-    mask-image: url("../img/mobile/icon/icon-gift.svg");
+    background-image: url("../img/mobile/icon/icon-gift.svg");
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: $environment-background;
     top: 23px;
     left: 18px;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
