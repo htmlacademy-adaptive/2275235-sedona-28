@@ -114,6 +114,7 @@
   background-color: $background-cards;
   border: none;
   padding: 0;
+  padding: 16px;
 }
 
 .data__textbox-input::placeholder {
@@ -136,6 +137,7 @@
   .data__btn {
     min-width: 324px;
     max-width: 384px;
+    cursor: pointer;
   }
 
   .data__title-legend::after {

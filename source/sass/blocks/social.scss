@@ -12,6 +12,62 @@
 
 .social__item {
   margin-right: 6px;
+
+}
+
+.social__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: $environment-background;
+}
+
+.social__vk {
+  margin: auto;
+}
+//*
+.social__academy {
+  &::after {
+    content: "";
+    mask-image: url("../img/sprite.svg#icon-academy");
+    fill: $color-title;
+    width: 27px;
+    height: 35px;
+  }
+}
+
+.social__academy:hover {
+  &::after {
+    fill: $environment-background;
+  }
+}
+//*
+.social__vk:active {
+  opacity: 30%;
+}
+
+.social__tg {
+  margin: auto;
+}
+
+.social__tg:active {
+  opacity: 30%;
+}
+
+.social__youtube {
+  margin: auto;
+}
+
+.social__youtube:active {
+  opacity: 30%;
+}
+
+.social__link:hover {
+  mask: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 @media (min-width: $tablet-width) {
