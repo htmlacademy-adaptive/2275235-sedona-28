@@ -13,9 +13,16 @@
   align-items: center;
 }
 
-.page-footer__copyright {
+.page-footer__HTML-academy {
   color: $color-title;
-  margin-right: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-footer__HTML-academy {
+  color: $color-title;
 }
 
 @media (min-width: $tablet-width) {

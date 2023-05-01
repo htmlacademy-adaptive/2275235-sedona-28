@@ -102,6 +102,19 @@
   border: none;
 }
 
+.data__btn:hover {
+  background-color: #669ec0;
+}
+
+.data__btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.data__btn:disabled {
+  background-color: #e5e5e5;
+}
+
 .data__send {
   display: flex;
   justify-content: flex-end;

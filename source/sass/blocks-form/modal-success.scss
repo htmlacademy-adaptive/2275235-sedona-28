@@ -1,3 +1,48 @@
 .modal-success__hide {
   display: none;
+  min-width: 320px;
+  min-height: 323px;
+  position: fixed;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: $background-main;
+  z-index: 6;
+}
+
+.modal-success__title {
+  font-size: 18px;
+  line-height: 1.44;
+  color: $color-title;
+  margin: 44px 39px 36px 37px;
+}
+
+.modal-success__description {
+  margin: 0 39px 47px 37px;
+}
+
+.modal-success__btn {
+  min-width: 320px;
+  min-height: 98px;
+  background-color: $environment-background;
+  color: $color-main;
+  border: 20px solid #F2F2F2;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-success__btn:hover {
+  background-color: #669ec0;
+}
+
+.modal-success__btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-success__btn:disabled {
+  background-color: #e5e5e5;
 }
