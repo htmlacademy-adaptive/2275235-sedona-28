@@ -38,6 +38,7 @@
   height: 46px;
   border-radius: 4px;
   background-color: $background-cards;
+  cursor: pointer;
 }
 
 .control__input[type=checkbox]:checked+.control__mark::before {

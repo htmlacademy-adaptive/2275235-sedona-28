@@ -12,6 +12,57 @@
 
 .social__item {
   margin-right: 6px;
+
+}
+
+.social__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: $environment-background;
+}
+
+.social__vk {
+  margin: auto;
+}
+
+.page-footer__HTML-academy:hover,
+.social__academy:hover {
+    color: $environment-background;
+  }
+
+.page-footer__HTML-academy:active,
+.social__academy:active {
+  color: #b3b3b3;
+}
+
+
+.social__vk:active {
+  opacity: 30%;
+}
+
+.social__tg {
+  margin: auto;
+}
+
+.social__tg:active {
+  opacity: 30%;
+}
+
+.social__youtube {
+  margin: auto;
+}
+
+.social__youtube:active {
+  opacity: 30%;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 @media (min-width: $tablet-width) {

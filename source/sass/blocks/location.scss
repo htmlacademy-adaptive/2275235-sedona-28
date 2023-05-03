@@ -1,5 +1,8 @@
 .location__map {
   margin-top: 49px;
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
 }
 
 @media (min-width: $tablet-width) {

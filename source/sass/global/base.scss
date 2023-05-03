@@ -11,6 +11,7 @@ img {
 }
 
 body {
+  min-height: 100vh;
   color: $color-paragraph;
   background-color: $background-contain;
   min-width: 320px;
