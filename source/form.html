@@ -6,18 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 </head>
 
 <body class="page__body">
   <div class="page__content">
     <header class="page-header">
       <div class="page-header__nav">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none" viewBox="0 0 23 22">
-              <path fill="#81B3D2" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+            <svg class="main-nav__opened" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#81B3D2"
+              viewBox="0 0 23 22">
+              <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
             </svg>
             <span class="visually-hidden">Открыть меню.</span>
+            <svg class="main-nav__closed" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#ffffff"
+              viewBox="0 0 23 22">
+              <path
+                d="M22.2 3.18 19.4.47 11.1 8.5 2.8.47 0 3.17l8.3 8.05L0 19.26l2.8 2.7 8.3-8.03 8.3 8.04 2.8-2.71-8.3-8.04 8.3-8.04Z" />
+            </svg>
+            <span class="visually-hidden">Закрыть меню.</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -52,7 +60,7 @@
     </header>
     <main class="page-feedback">
       <section class="welcome">
-        <div class="welcome__backdrop">
+        <div class="welcome__backdrop-form">
           <h1 class="visually-hidden">"Cедона."</h1>
           <img class="welcome__image" src="img/mobile/sedona.svg" width="229" height="39" alt="приветствует седона.">
         </div>
@@ -79,8 +87,8 @@
             <input class="handset__subscribe-input-tel" type="tel" name="phone" id="phone" placeholder="Введите телефон"
               required>
             <label class="handset__subscribe-title" for="email">Электронная почта*:</label>
-            <input class="handset__subscribe-input-email" type="email" name="email" id="email" placeholder="Введите e-mail"
-              required>
+            <input class="handset__subscribe-input-email" type="email" name="email" id="email"
+              placeholder="Введите e-mail" required>
           </fieldset>
           <fieldset class="data__feedback response">
             <legend class="data__title-legend">ваше общее впечатление:</legend>
@@ -101,7 +109,7 @@
               </li>
               <li class="response__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="accomodation-radio">
+                  <input class="visually-hidden control__input" type="radio" name="accomodation-radio">
                   <span class="control__mark"></span>
                   <span class="control__label">Затрудняюсь ответить</span>
                 </label>
@@ -113,28 +121,28 @@
             <ul class="choice__list">
               <li class="choice__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="devil's-bridge" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="devil's-bridge" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Мост Дьявола</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="mount-bell" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="mount-bell" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Гора-Колокол</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
+                  <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Слайд-парк</span>
                 </label>
               </li>
               <li class="choice__item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
+                  <input class="visually-hidden control__input" type="checkbox" name="red-rocks">
                   <span class="control__mark"></span>
                   <span class="control__label">Красные скалы</span>
                 </label>
@@ -160,38 +168,24 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                  <g clip-path="url(#a)">
-                    <path fill="#fff" fill-rule="evenodd"
-                      d="M35.45 17.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74v-5.11c0-.66-.18-.95-.74-.95h-4.13c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H12.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55 2.18 3.06 5.23 4.72 8.01 4.72 1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C31.11 30.22 31.4 31 32.41 31h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.53-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
-                      clip-rule="evenodd" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M12 12h24v24H12z" />
-                    </clipPath>
-                  </defs>
+                <svg class="social__vk" width="24" height="14">
+                  <use href="img/sprite.svg#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">Вконтакте.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://t.me/htmlacademy">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                  <path fill="#fff"
-                    d="m34.44 16.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2l-11.07 6.97-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53l18.62-7.18c.87-.32 1.62.2 1.34 1.51Z" />
+                <svg class="social__tg" width="22" height="18">
+                  <use href="img/sprite.svg#icon-tg"></use>
                 </svg>
                 <span class="visually-hidden">телеграм.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48">
-                  <path fill="#81B3D2" d="M0 0h48v48H0z" />
-                  <path fill="#fff"
-                    d="M31.18 17H16.81c-1.5 0-2.81 1.3-2.81 2.8v8.3c0 1.6 1.3 2.9 2.81 2.9h14.37A2.8 2.8 0 0 0 34 28.2v-8.4c.1-1.5-1.2-2.8-2.8-2.8ZM21.03 27.4v-6.8l6.84 3.4-6.84 3.4Z" />
+                <svg class="social__youtube" width="20" height="14">
+                  <use href="img/sprite.svg#icon-youtube"></use>
                 </svg>
                 <span class="visually-hidden">ютуб.</span>
               </a>
@@ -199,11 +193,10 @@
           </ul>
         </div>
         <div class="page-footer__academy">
-          <p class="page-footer__copyright">разработано</p>
           <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-              <path fill="#000"
-                d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+            разработано
+            <svg class="social__academy" width="27" height="35">
+              <use href="img/sprite.svg#icon-academy"></use>
             </svg>
             <span class="visually-hidden">сайт академии.</span>
           </a>
@@ -219,14 +212,15 @@
       </div>
     </div>
     <div class="modal-success">
-      <div class="modal-success__hide">
+      <div class="modal-success__hide modal-success__hide--popup">
         <h2 class="modal-success__title">ваш отзыв отправлен!</h2>
-        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время
           мы опубликуем его на сайте.</p>
         <button class="modal-success__btn" type="button">закрыть окно</button>
       </div>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

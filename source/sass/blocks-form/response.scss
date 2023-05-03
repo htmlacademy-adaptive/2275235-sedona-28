@@ -1,19 +1,49 @@
 .response__item {
-  margin-bottom: 16px;
+  margin-bottom: 36px;
+  position: relative;
+  display: block;
+}
+
+.response__list {
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .response__list {
     display: grid;
-    width: 648px;
+    min-width: 648px;
     grid-template-columns: 1fr 1fr;
+
+    .response__item {
+      margin-left: 36px;
+    }
+
+    .response__item:nth-child(2) {
+      margin-left: 16px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .response__list {
     width: 960px;
-    gap: 61px;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .response__item:first-child {
+    margin-left: 53px;
+  }
+
+  .response__item {
+    margin-left: 28px;
+  }
+
+  .response__list .response__item:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .response__list .response__item {
+    margin-left: 0;
   }
 }

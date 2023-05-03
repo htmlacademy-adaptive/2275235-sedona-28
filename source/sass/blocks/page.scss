@@ -1,21 +1,22 @@
 .page__content {
-  width: 320px;
+  min-width: 320px;
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
   background-color: $background-main;
   box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .page__content {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page__content {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }

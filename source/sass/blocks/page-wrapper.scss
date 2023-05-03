@@ -1,7 +1,25 @@
+.page-wrapper {
+  flex-grow: 1;
+}
+
 .page-wrapper__chapter {
-  background: url("../img/mobile/background-mobile.jpg") no-repeat;
+  background: url("../img/mobile/back-mobile.jpg") no-repeat;
   background-color: $environment-background;
   min-height: 389px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.page-wrapper__chapter::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/mobile/zig-zag.svg");
+  width: 1200px;
+  height: 57px;
+  top: 362px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -9,6 +27,19 @@
     background: url("../img/tablet/back-tablet.jpg") no-repeat;
     background-color: $environment-background;
     min-height: 518px;
+  }
+
+  .page-wrapper__chapter::before {
+    top: 490px;
+  }
+}
+
+
+@media (min-resolution: 2dppx) {
+  .page-wrapper__chapter {
+    background-image: url("../img/tablet/back-tablet@2x.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 

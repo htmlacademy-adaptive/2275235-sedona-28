@@ -16,12 +16,26 @@
 .search-hotels__button {
   background-color: $environment-background;
   display: block;
-  width: 284px;
+  min-width: 284px;
+  max-width: 458px;
   font-weight: 700;
   padding: 16px 49px;
   color: $color-main;
   text-decoration: none;
   margin: auto;
+}
+
+.search-hotels__button:hover {
+  background-color: #669ec0;
+}
+
+.search-hotels__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-hotels__button:disabled {
+  background-color: #e5e5e5;
 }
 
 .search-hotels__piece {
