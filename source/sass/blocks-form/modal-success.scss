@@ -1,5 +1,8 @@
-.modal-success__hide {
+.modal-success__hide--popup {
   display: none;
+}
+
+.modal-success__hide {
   min-width: 320px;
   min-height: 323px;
   position: fixed;
