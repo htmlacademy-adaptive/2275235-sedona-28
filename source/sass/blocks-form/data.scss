@@ -274,4 +274,25 @@
   .data__btn {
     margin-left: 96px;
   }
+
+  .data__feedback:nth-child(2) {
+    margin-left: 49.5px;
+  }
+
+  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
+    border-top: 1px solid $border;
+  }
+
+  .data__title-legend {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .data__send {
+    right: 96px;
+  }
+
+  .data__btn {
+    margin-left: 96px;
+  }
 }
