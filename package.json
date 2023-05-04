@@ -39,8 +39,5 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module",
-  "volta": {
-    "node": "16.20.0"
-  }
+  "type": "module"
 }
