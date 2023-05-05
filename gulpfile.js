@@ -9,8 +9,9 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-//import del from 'del';
+import {deleteAsync} from 'del';
 import browser from 'browser-sync';
+
 
 // Styles
 
@@ -66,13 +67,48 @@ export const createWebp = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+// SVG
+
+export const svg = () =>
+  gulp.src(['source/img/mobile/*.svg', 'source/img/mobile/icon/*.svg', '!source/img/mobile/social/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+
+export const sprite = () => {
+  return gulp.src('source/img/mobile/social/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
+
+// Copy
+
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest('build'))
+  done();
+}
+
+//Clean
+
+export const clean = () => {
+  return deleteAsync('build');
+}
 
 // Server
 
-const server = (done) => {
+export const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -83,7 +119,7 @@ const server = (done) => {
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
@@ -124,3 +160,8 @@ export default gulp.series(
     server,
     watcher
   ));
+
+  function reload (done) {
+    browser.reload();
+    done();
+  }
