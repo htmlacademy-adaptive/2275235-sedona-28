@@ -9,9 +9,8 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import {deleteAsync} from 'del';
+import del from 'del';
 import browser from 'browser-sync';
-
 
 // Styles
 
@@ -24,7 +23,7 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('biuld/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -39,7 +38,7 @@ export const htmlmin = () => {
 // script
 
 export const scripts = () => {
-  return gulp.src('source/js/script.js')
+  return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
 }
@@ -60,7 +59,7 @@ export const copyImages = () => {
 // WebP
 
 export const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicon/*.{jpg,png}'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -70,7 +69,7 @@ export const createWebp = () => {
 // SVG
 
 export const svg = () =>
-  gulp.src(['source/img/mobile/*.svg', 'source/img/mobile/icon/*.svg', '!source/img/mobile/social/*.svg'])
+  gulp.src(['source/img/mobile/*.svg', 'source/img/mobile/icon/*.svg', '!source/img/favicon/*.svg', '!source/img/sprite.svg', '!source/img/mobile/social/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
@@ -90,6 +89,7 @@ export const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
@@ -100,7 +100,7 @@ export const copy = (done) => {
 //Clean
 
 export const clean = () => {
-  return deleteAsync('build');
+  return del('build');
 }
 
 // Server
@@ -122,7 +122,7 @@ export const server = (done) => {
 export const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -161,7 +161,7 @@ export default gulp.series(
     watcher
   ));
 
-  function reload (done) {
+  export const reload = (done) => {
     browser.reload();
     done();
   }
