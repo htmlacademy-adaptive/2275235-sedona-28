@@ -11,6 +11,8 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+
 
 // Styles
 
@@ -23,13 +25,13 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('biuld/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
 // HTML
 
-export const htmlmin = () => {
+export const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -133,7 +135,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
-    htmlmin,
+    html,
     scripts,
     svg,
     sprite,
@@ -150,7 +152,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    htmlmin,
+    html,
     scripts,
     svg,
     sprite,
