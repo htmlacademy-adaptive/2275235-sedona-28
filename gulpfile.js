@@ -71,9 +71,9 @@ export const createWebp = () => {
 // SVG
 
 export const svg = () =>
-  gulp.src(['source/img/mobile/*.svg', 'source/img/mobile/icon/*.svg', '!source/img/favicon/*.svg', '!source/img/sprite.svg', '!source/img/mobile/social/*.svg'])
+  gulp.src(['source/img/mobile/*.svg', 'source/img/mobile/icon/*.svg', '!source/img/sprite.svg', '!source/img/mobile/social/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img/mobile', 'build/img/mobile/icon'));
 
 export const sprite = () => {
   return gulp.src('source/img/mobile/social/*.svg')
