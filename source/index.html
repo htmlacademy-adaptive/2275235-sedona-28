@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 </head>
@@ -99,11 +99,6 @@
           </li>
           <li class="story__highlights-img">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/desktop/photo-city@1x.webp 1x, img/desktop/photo-city@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/tablet/photo-city@1x.webp 1x, img/tablet/photo-city@2x.webp 2x">
-              <source type="image/webp" srcset="img/mobile/photo-city@1x.webp 1x, img/mobile/photo-city@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/desktop/hotel.jpg 1x, img/desktop/hotel@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/hotel.jpg 1x, img/tablet/hotel@2x.jpg 2x">
               <img class="story__img" src="img/mobile/hotel.jpg" srcset="img/mobile/hotel@2x.jpg 2x" width="320"
@@ -217,7 +212,7 @@
         <div class="page-footer__academy">
           <a class="page-footer__HTML-academy" href="https://up.htmlacademy.ru/">
             разработано
-            <svg class="social__academy" width="27" height="35">
+            <svg class="page-footer__social-academy" width="27" height="35">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>
             <span class="visually-hidden">сайт академии.</span>

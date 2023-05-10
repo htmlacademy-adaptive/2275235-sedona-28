@@ -25,6 +25,16 @@
   color: $color-title;
 }
 
+.page-footer__HTML-academy:hover,
+.page-footer__social-academy:hover {
+    color: $environment-background;
+  }
+
+.page-footer__HTML-academy:active,
+.page-footer__social-academy:active {
+  color: #b3b3b3;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__connection {
     display: flex;

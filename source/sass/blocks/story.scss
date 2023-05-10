@@ -128,7 +128,7 @@
 .story__item--house {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-house.svg");
+    background-image: url("../img/mobile/icon-house.svg");
     position: absolute;
     width: 40px;
     height: 38px;
@@ -142,7 +142,7 @@
 .story__item--burger {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-burger.svg");
+    background-image: url("../img/mobile/icon-burger.svg");
     position: absolute;
     width: 40px;
     height: 36px;
@@ -156,7 +156,7 @@
 .story__item--gift {
   &::after {
     content: "";
-    background-image: url("../img/mobile/icon/icon-gift.svg");
+    background-image: url("../img/mobile/icon-gift.svg");
     position: absolute;
     width: 40px;
     height: 40px;
