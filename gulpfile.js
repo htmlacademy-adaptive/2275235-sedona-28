@@ -161,9 +161,10 @@ export default gulp.series(
   gulp.series(
     server,
     watcher
-  ));
+  )
+);
 
-  export const reload = (done) => {
-    browser.reload();
-    done();
-  }
+export const reload = (done) => {
+  browser.reload();
+  done();
+}
