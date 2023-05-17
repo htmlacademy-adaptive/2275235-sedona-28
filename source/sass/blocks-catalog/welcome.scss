@@ -2,6 +2,9 @@
   background: url("../img/mobile/back-desktop.jpg") no-repeat;
   background-color: $environment-background;
   position: relative;
+  height: 157px;
+  background-size: 577px 258px;
+  background-position: center bottom;
 }
 
 .welcome__backdrop-form {
@@ -23,7 +26,7 @@
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 136px;
+  top: 129px;
   right: 50%;
   transform: translate(50%, -50%);
   background-repeat: no-repeat;
@@ -39,6 +42,8 @@
     background: url("../img/tablet/back-main.jpg") no-repeat;
     background-color: $environment-background;
     min-height: 290px;
+    background-size: 773px auto;
+    background-position: center bottom;
   }
 
   .welcome__backdrop::before {
@@ -46,7 +51,7 @@
   }
 
   .welcome__image {
-    margin: 108px 0 0;
+    margin: 94px 0 0;
     width: 457px;
     height: 78px;
   }
@@ -55,18 +60,22 @@
 @media (min-resolution: 2dppx) {
   .welcome__backdrop {
     background-image: url("../img/tablet/back-desktop@2x.jpg");
-    background-position: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .welcome__backdrop {
+    background-image: url("../img/desktop/back-desktop.jpg");
     background-size: cover;
-    min-height: 518px;
+    min-height: 300px;
+  }
+
+  .welcome__image {
+    margin-top: 103px;
   }
 
   .welcome__backdrop::before {
-    top: 490px;
+    top: 273px;
   }
 }
 
