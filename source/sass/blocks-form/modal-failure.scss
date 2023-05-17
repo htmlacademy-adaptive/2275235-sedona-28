@@ -23,7 +23,7 @@
 }
 
 .modal-failure__description {
-  margin: 0 42px 28px 41px;
+  margin: 40px 42px 24px 41px;
 }
 
 .modal-failure__btn {
@@ -35,7 +35,7 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-  margin-bottom: 35px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -60,9 +60,9 @@
 
   .modal-failure__title {
     font-size: 30px;
-    line-height: 1.03;
+    line-height: 40px;
     padding: 0 42px 0 42px;
-    margin: 54px 47px 37px 46px;
+    margin: 54px 47px 24px 46px;
   }
 
   .modal-failure__description {
@@ -71,5 +71,8 @@
 
   .modal-failure__btn {
     margin-bottom: 49px;
+    padding: 13px 121px;
+    font-size: 21px;
+    line-height: 1.44;
   }
 }

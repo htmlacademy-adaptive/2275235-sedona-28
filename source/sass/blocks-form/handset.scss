@@ -3,13 +3,13 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-  margin-bottom: 33px;
+  margin-bottom: 19px;
   position: relative;
 }
 
 .handset__subscribe-title {
   display: flex;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .handset__feedback::after {
@@ -19,7 +19,7 @@
   height: 1px;
   background-color: $border;
   right: -270px;
-  top: -24px;
+  top: -26px;
 }
 
 .handset__subscribe-input-email {

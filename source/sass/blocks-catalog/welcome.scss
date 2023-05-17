@@ -9,15 +9,14 @@
 
 .welcome__backdrop-form {
   background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom center;
-  background-size: 923px 410px;
+  background-size:  905px 388px;
   background-color: $environment-background;
-  min-height: 159px;
+  min-height: 158px;
   position: relative;
 }
 
 .welcome__image {
   margin-top: 52px;
-  margin-bottom: 67px;
 }
 
 .welcome__backdrop::before {
@@ -85,7 +84,7 @@
   background-image: url("../img/mobile/zig-zag.svg");
   width: 1200px;
   height: 57px;
-  top: 136px;
+  top: 130px;
   right: 50%;
   transform: translate(50%, -50%);
   background-repeat: no-repeat;
@@ -95,11 +94,11 @@
   .welcome__backdrop-form {
     background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
     background-color: $environment-background;
-    min-height: 357px;
+    min-height: 290px;
   }
 
   .welcome__backdrop-form::before {
-    top: 329px;
+    top: 262px;
   }
 }
 
@@ -107,6 +106,10 @@
   .welcome__backdrop-form {
     background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom;
     background-color: $environment-background;
-    min-height: 357px;
+    min-height: 301px;
+  }
+
+  .welcome__backdrop-form::before {
+    top: 274px;
   }
 }

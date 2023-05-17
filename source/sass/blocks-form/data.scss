@@ -8,7 +8,7 @@
 
 .data__section {
   text-align: start;
-  margin-bottom: 59px;
+  margin-bottom: 49px;
   padding: 0;
   border: none;
 }
@@ -42,7 +42,7 @@
   height: 1px;
   background-color: $border;
   right: -320px;
-  top: -24px;
+  top: -26px;
 }
 
 .data__input {
@@ -62,6 +62,9 @@
 .data__feedback input[type=tel] {
   background-color: $background-cards;
   border: none;
+  font-size: 18px;
+  line-height: 1.44;
+  font-family: $font;
 }
 
 .data__section input[type=text]::placeholder {
@@ -82,8 +85,18 @@
   margin-left: 16px;
 }
 
+.data__feedback:nth-child(4) {
+  margin-bottom: 24px;
+  margin-top: -20px;
+}
+
+.data__feedback:last-child {
+  margin-bottom: 55px;
+  margin-top: 49px;
+}
+
 .data__feedback {
-  margin-bottom: 64px;
+  margin-bottom: 44px;
   text-align: start;
   padding: 0;
   border: none;
@@ -92,11 +105,15 @@
 }
 
 .data__btn {
+  font-family: $font;
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 21px;
   line-height: 1.24;
   min-width: 280px;
   max-width: 324px;
   height: 58px;
+  margin-bottom: 4px;
   color: $color-main;
   background-color: $environment-background;
   border: none;
@@ -119,6 +136,8 @@
   display: flex;
   justify-content: flex-end;
   opacity: 60%;
+  font-size: 12px;
+  line-height: 1.75;
 }
 
 .data__textbox-input {
@@ -128,6 +147,7 @@
   border: none;
   padding: 0;
   padding: 16px;
+  font-family: $font;
 }
 
 .data__textbox-input::placeholder {
@@ -147,10 +167,22 @@
     padding-right: 65px;
   }
 
+  .data__title-legend--attractions {
+    padding-left: 127px;
+    padding-right: 129px;
+    margin-bottom: 31px;
+  }
+
+  .data__title-legend--emotions {
+    margin-top: 1px;
+  }
+
   .data__btn {
     min-width: 324px;
     max-width: 384px;
     cursor: pointer;
+    margin-top: -15px;
+    margin-bottom: 15px;
   }
 
   .data__title-legend::after {
@@ -167,8 +199,9 @@
     grid-column: 1/2;
     padding-left: 0;
     padding-right: 29px;
-    margin-right: 29px;
+    margin-right: 23px;
     margin-left: 0;
+    margin-bottom: 47px;
   }
 
   .data__section::after {
@@ -177,7 +210,7 @@
     width: 1px;
     height: 338px;
     background-color: $border;
-    right: -1px;
+    right: 4px;
     top: -60px;
   }
 
@@ -195,17 +228,15 @@
   .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
     border-top: 1px solid $border;
     margin: 0;
-    margin-bottom: 42px;
-  }
-
-  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
-    border-top: 1px solid $border;
+    margin-bottom: 8px;
   }
 
   .data__send {
     position: absolute;
     right: 0;
-    top: 28px;
+    top: 9px;
+    font-size: 14px;
+    line-height: 1.50;
   }
 
   .data__textbox-input {
@@ -246,14 +277,20 @@
     padding-right: 49.5px;
   }
 
+  .data__section::after {
+    right: -6px;
+    top: -64px;
+  }
+
   .data__section {
-    margin-right: 49.5px;
-    padding-right: 49.5px;
+    margin-right: 5px;
+    padding-right: 45.5px;
+    margin-bottom: 56px;
   }
 
   .data__feedback:nth-child(n+3) {
     width: 960px;
-    margin-top: 48px;
+    margin-top: 63px;
   }
 
   .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
@@ -286,6 +323,12 @@
   .data__title-legend {
     padding-left: 75px;
     padding-right: 75px;
+  }
+
+  .data__title-legend--attractions {
+    padding-left: 277px;
+    padding-right: 279px;
+    margin-bottom: 61px;
   }
 
   .data__send {

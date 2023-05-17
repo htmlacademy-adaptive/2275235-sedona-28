@@ -6,6 +6,7 @@
 
 .response__list {
   padding: 0;
+  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,7 +20,7 @@
     }
 
     .response__item:nth-child(2) {
-      margin-left: 16px;
+      margin-left: 8px;
     }
   }
 }
@@ -27,8 +28,9 @@
 @media (min-width: $desktop-width) {
   .response__list {
     width: 960px;
-    gap: 40px;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 26px;
+    margin-bottom: 48px;
   }
 
   .response__item:first-child {
@@ -40,10 +42,14 @@
   }
 
   .response__list .response__item:nth-child(2) {
-    margin-left: 0;
+    margin-left: 41px;
+  }
+
+  .response__list .response__item:last-child {
+    margin-left: 29px;
   }
 
   .response__list .response__item {
-    margin-left: 0;
+    margin-left: 54px;
   }
 }
