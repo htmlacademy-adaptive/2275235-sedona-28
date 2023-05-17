@@ -27,7 +27,6 @@
 }
 
 .data__title-legend {
-  text-align: center;
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
@@ -157,24 +156,47 @@
   font-weight: 700;
 }
 
+@media (max-width: $mobile-width-only) {
+  .data__title-legend {
+    padding-left: 71px;
+  }
+
+  .data__title-legend--estimation {
+    padding-left: 24px;
+  }
+
+  .data__title-legend--attractions {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .data__title-legend--emotions {
+    padding-left: 33px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .data__title-legend {
     font-size: 21px;
     line-height: 1.24;
-    margin-top: 48px;
     margin-bottom: 28px;
     padding-left: 65px;
     padding-right: 65px;
   }
 
+  .data__title-legend--estimation {
+    padding-left: 188px;
+  }
+
   .data__title-legend--attractions {
-    padding-left: 127px;
-    padding-right: 129px;
+    text-align: center;
+    padding-left: 162px;
+    padding-right: 165px;
     margin-bottom: 31px;
   }
 
   .data__title-legend--emotions {
-    margin-top: 1px;
+    padding-left: 199px;
   }
 
   .data__btn {
@@ -298,12 +320,6 @@
     margin: 0;
   }
 
-  .data__title-legend {
-    padding-left: 75px;
-    padding-right: 75px;
-    margin-top: 0;
-  }
-
   .data__send {
     right: 96px;
   }
@@ -321,14 +337,22 @@
   }
 
   .data__title-legend {
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 135px;
+    margin-top: 0;
   }
 
   .data__title-legend--attractions {
     padding-left: 277px;
     padding-right: 279px;
     margin-bottom: 61px;
+  }
+
+  .data__title-legend--estimation {
+    padding-left: 345px;
+  }
+
+  .data__title-legend--emotions {
+    padding-left: 355px;
   }
 
   .data__send {

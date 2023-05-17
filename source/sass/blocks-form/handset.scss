@@ -1,10 +1,10 @@
 .handset__feedback {
-  text-align: center;
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
   margin-bottom: 19px;
   position: relative;
+  padding-left: 21px;
 }
 
 .handset__subscribe-title {
@@ -46,10 +46,10 @@
 
 @media (min-width: $tablet-width) {
   .handset__feedback {
-    text-align: center;
     font-size: 21px;
     line-height: 1.24;
     margin-bottom: 28px;
+    padding-left: 7px;
   }
 
   .handset__feedback::after {
@@ -68,6 +68,10 @@
 @media (min-width: $desktop-width) {
   .handset__subscribe-input-tel {
     width: 430px;
+  }
+
+  .handset__feedback {
+    padding-left: 76px;
   }
 
   .handset__subscribe-input-email {
