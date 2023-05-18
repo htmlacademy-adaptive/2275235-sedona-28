@@ -87,6 +87,7 @@
   padding: 0px;
   background-color: $background-main;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 

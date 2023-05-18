@@ -9,6 +9,7 @@
 
 .page-footer__academy {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -17,6 +18,7 @@
   color: $color-title;
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }

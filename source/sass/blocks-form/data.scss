@@ -79,6 +79,7 @@
 
 .data__title {
   display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   margin-left: 16px;
   margin-left: 16px;
@@ -133,6 +134,7 @@
 
 .data__send {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   opacity: 60%;
   font-size: 12px;
