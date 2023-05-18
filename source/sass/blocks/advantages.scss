@@ -18,13 +18,12 @@
 .advantages--ladder::before {
   position: absolute;
   content: "";
-  background-image: url(../img/mobile/ladder.svg);
-  min-width: 320px;
+  background: url(../img/mobile/ladder.svg) no-repeat center;
+  width: 768px;
   height: 37px;
-  background-repeat: no-repeat;
-  margin-left: -160px;
-  bottom: -20px;
-  z-index: 4;
+  bottom: -39px;
+  right: 50%;
+  transform: translate(50%,-50%);
 }
 
 @media (min-width: $tablet-width) {
