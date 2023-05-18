@@ -55,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .modal-failure__hide {
     width: 400px;
-    height: 347px;
+    min-height: 347px;
   }
 
   .modal-failure__title {

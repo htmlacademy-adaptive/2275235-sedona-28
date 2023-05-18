@@ -38,14 +38,14 @@
 .story__preeminence-item {
   background-color: $environment-background;
   list-style: none;
-  height: 191px;
+  min-height: 191px;
   margin-top: 45px;
 }
 
 .story__highlights-item {
   background-color: $environment-background;
   list-style: none;
-  height: 209px;
+  min-height: 209px;
 }
 
 .story__preeminence-img {
@@ -218,7 +218,7 @@
 
   .story__highlights-item {
     grid-column: 1/2;
-    height: 256px;
+    min-height: 256px;
   }
 
   .story__highlights-img {
@@ -431,7 +431,7 @@
 
 
   .story__highlights-description:nth-child(n+2) {
-    padding: 23px 65px 53px 61px;
+    padding: 23px 65px 0 61px;
   }
 
   .story__item--house::after {
