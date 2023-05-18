@@ -1,6 +1,6 @@
 .social__list {
   list-style: none;
-  width: 162px;
+  width: 156px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -13,7 +13,10 @@
 
 .social__item {
   margin-right: 6px;
+}
 
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {
