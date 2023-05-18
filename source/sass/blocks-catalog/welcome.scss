@@ -1,10 +1,9 @@
 .welcome__backdrop {
-  background: url("../img/mobile/back-desktop.jpg") no-repeat;
+  background: url("../img/desktop/back-desktop.jpg") no-repeat bottom center;
   background-color: $environment-background;
   position: relative;
   height: 157px;
-  background-size: 577px 258px;
-  background-position: center bottom;
+  background-size: 904px 388px;
 }
 
 .welcome__backdrop-form {
@@ -38,11 +37,10 @@
 
 @media (min-width: $tablet-width) {
   .welcome__backdrop {
-    background: url("../img/tablet/back-main.jpg") no-repeat;
+    background: url("../img/desktop/back-desktop.jpg") no-repeat bottom center;
     background-color: $environment-background;
     min-height: 290px;
-    background-size: 773px auto;
-    background-position: center bottom;
+    background-size: 1200px auto;
   }
 
   .welcome__backdrop::before {
@@ -58,7 +56,7 @@
 
 @media (min-resolution: 2dppx) {
   .welcome__backdrop {
-    background-image: url("../img/tablet/back-desktop@2x.jpg");
+    background-image: url("../img/desktop/back-desktop@2x.jpg");
   }
 }
 
