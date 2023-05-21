@@ -8,7 +8,7 @@
 
 .welcome__backdrop-form {
   background: url("../img/desktop/back-desktop-form.jpg") no-repeat bottom center;
-  background-size:  905px 388px;
+  background-size: 905px 388px;
   background-color: $environment-background;
   min-height: 158px;
   position: relative;
@@ -32,7 +32,6 @@
 
 .main__nav--closed .welcome__backdrop::before {
   top: 1px;
-
 }
 
 @media (min-width: $tablet-width) {

@@ -1,6 +1,6 @@
 .cards__list {
   outline: $outline;
-  margin: 0px;
+  margin: 0;
   padding: 0 18px;
 }
 
@@ -23,7 +23,7 @@
 .cards__title {
   color: $color-title;
   font-size: 14px;
-  line-height: 1.50;
+  line-height: 1.5;
   font-weight: 700;
   text-align: start;
   margin: 0;
@@ -49,7 +49,7 @@
 .cards__link-text {
   color: $color-title;
   font-size: 14px;
-  line-height: 1.50;
+  line-height: 1.5;
   font-weight: 700;
   margin-left: 14px;
   margin-top: 25px;

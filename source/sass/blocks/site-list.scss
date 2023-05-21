@@ -2,8 +2,8 @@
   list-style: none;
   min-width: 320px;
   height: 55px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-list__link {
@@ -19,8 +19,6 @@
   text-transform: uppercase;
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
 }
 
 .site-list__link:last-child {
@@ -31,7 +29,7 @@
   .site-list__link {
     color: $color-title;
     font-size: 14px;
-    line-height: 1.50;
+    line-height: 1.5;
     border: none;
   }
 

@@ -2,10 +2,6 @@
   padding: 0 18px;
 }
 
-.data__container {
-  padding: 0 18px;
-}
-
 .data__section {
   text-align: start;
   margin-bottom: 49px;
@@ -19,11 +15,6 @@
   margin-bottom: 59px;
   padding: 0;
   border: none;
-}
-
-.data__section::after {
-  position: absolute;
-  border-top: 1px solid $border;
 }
 
 .data__title-legend {
@@ -56,9 +47,9 @@
   padding-left: 16px;
 }
 
-.data__feedback input[type=email],
-.data__section input[type=text],
-.data__feedback input[type=tel] {
+.data__feedback input[type="email"],
+.data__section input[type="text"],
+.data__feedback input[type="tel"] {
   background-color: $background-cards;
   border: none;
   font-size: 18px;
@@ -66,12 +57,12 @@
   font-family: $font;
 }
 
-.data__section input[type=text]::placeholder {
+.data__section input[type="text"]::placeholder {
   color: $color-title;
 }
 
-.data__feedback input[type=tel],
-.data__feedback input[type=email]::placeholder {
+.data__feedback input[type="tel"],
+.data__feedback input[type="email"]::placeholder {
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
@@ -81,7 +72,6 @@
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
-  margin-left: 16px;
   margin-left: 16px;
 }
 
@@ -98,8 +88,6 @@
 .data__feedback {
   margin-bottom: 44px;
   text-align: start;
-  padding: 0;
-  border: none;
   padding: 0;
   border: none;
 }
@@ -146,7 +134,6 @@
   min-height: 150px;
   background-color: $background-cards;
   border: none;
-  padding: 0;
   padding: 16px;
   font-family: $font;
 }
@@ -260,7 +247,7 @@
     right: 0;
     top: 9px;
     font-size: 14px;
-    line-height: 1.50;
+    line-height: 1.5;
   }
 
   .data__textbox-input {
@@ -281,8 +268,8 @@
   }
 
   .data__btn {
-    width: 324px;
     width: 384px;
+    margin-left: 96px;
   }
 
   .data__input {
@@ -294,11 +281,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .data__section {
-    margin-right: 49.5px;
-    padding-right: 49.5px;
   }
 
   .data__section::after {
@@ -326,16 +308,8 @@
     right: 96px;
   }
 
-  .data__btn {
-    margin-left: 96px;
-  }
-
   .data__feedback:nth-child(2) {
     margin-left: 49.5px;
-  }
-
-  .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
-    border-top: 1px solid $border;
   }
 
   .data__title-legend {
@@ -355,13 +329,5 @@
 
   .data__title-legend--emotions {
     padding-left: 355px;
-  }
-
-  .data__send {
-    right: 96px;
-  }
-
-  .data__btn {
-    margin-left: 96px;
   }
 }

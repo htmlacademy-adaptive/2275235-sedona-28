@@ -23,14 +23,10 @@
   gap: 12px;
 }
 
-.page-footer__HTML-academy {
-  color: $color-title;
-}
-
 .page-footer__HTML-academy:hover,
 .page-footer__social-academy:hover {
-    color: $environment-background;
-  }
+  color: $environment-background;
+}
 
 .page-footer__HTML-academy:active,
 .page-footer__social-academy:active {
