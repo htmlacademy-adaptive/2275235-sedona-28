@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="homepage of the city of Sedona, Arizona.">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
@@ -33,7 +34,7 @@
   <div class="page__content">
     <header class="page-header">
       <div class="page-header__nav">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <svg class="main-nav__opened" xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="#81B3D2"
               viewBox="0 0 23 22">
@@ -49,7 +50,7 @@
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--current">
+              <a class="site-list__link site-list__link--current" href="#">
                 главная
               </a>
             </li>
@@ -84,8 +85,8 @@
         <img class="introduction__plan" src="img/mobile/welcome.svg" width="282" height="214"
           alt="Добро пожаловать в Седону.">
       </section>
-      <section class="advantages">
-        <h2 class="advantages__title">седона — небольшой городок в аризоне,<br>заслуживающий большего!</h2>
+      <section class="advantages advantages--ladder">
+        <h2 class="advantages__title">седона — небольшой городок в аризоне, заслуживающий большего!</h2>
         <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section class="story">
@@ -107,20 +108,20 @@
           </li>
           <li class="story__item title story__item--house">
             <div class="story__benefit">
-              <h2 class="story__title">жилье</h2>
-              <p class="story__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h2 class="story__title story__title--house">жилье</h2>
+              <p class="story__description story__description--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
           </li>
           <li class="story__item title story__item--burger">
             <div class="story__benefit">
-              <h2 class="story__title title__story">еда</h2>
-              <p class="story__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <h2 class="story__title story__title--burger">еда</h2>
+              <p class="story__description story__description--burger">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="story__item title story__item--gift">
             <div class="story__benefit">
-              <h2 class="story__title title__story">сувениры</h2>
-              <p class="story__description">не только китайского, но и местного производства!</p>
+              <h2 class="story__title story__title--gift">сувениры</h2>
+              <p class="story__description story__description--gift">не только китайского, но и местного производства!</p>
             </div>
           </li>
           <li class="story__preeminence-item">
@@ -142,14 +143,14 @@
             <div class="story__piece">
               <h2 class="story__title-rank">небольшая площадь</h2>
               <p class="story__numbering">— №3 —</p>
-              <p class="story__description-rank">все интересные места находятся очень близко</p>
+              <p class="story__description-rank story__description-rank--square">все интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="story__item">
             <div class="story__piece">
               <h2 class="story__title-rank">красивая дорога</h2>
               <p class="story__numbering">— №4 —</p>
-              <p class="story__description-rank">ехать в седону из лас-вегаса совсем не скучно!</p>
+              <p class="story__description-rank story__description-rank--road">ехать в седону из лас-вегаса совсем <br> не скучно!</p>
             </div>
           </li>
           <li class="story__item">
@@ -164,7 +165,7 @@
       <section class="search-hotels">
         <div class="search-hotels__piece">
           <h2 class="search-hotels__title">Заинтересовались?</h2>
-          <p class="search-hotels__description">укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
+          <p class="search-hotels__description">укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие
             предложения
             гостиниц в седоне</p>
           <a class="search-hotels__button" href="catalog.html">найти гостиницу</a>
@@ -172,7 +173,7 @@
       </section>
       <section class="location">
         <h2 class="visually-hidden">местоположение седоны.</h2>
-        <iframe class="location__map"
+        <iframe class="location__map" title="myFrame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937305.241858962!2d-113.27109879541032!3d34.830669755307746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1681286371411!5m2!1sru!2sru"
           width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
