@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="preload">
 </head>
 
 <body class="page__body">
@@ -100,6 +101,11 @@
           </li>
           <li class="story__highlights-img">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/desktop/hotel.webp 1x, img/desktop/hotel@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/hotel.webp 1x, img/tablet/hotel@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/hotel.webp 1x, img/mobile/hotel@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/desktop/hotel.jpg 1x, img/desktop/hotel@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/hotel.jpg 1x, img/tablet/hotel@2x.jpg 2x">
               <img class="story__img" src="img/mobile/hotel.jpg" srcset="img/mobile/hotel@2x.jpg 2x" width="320"
@@ -109,19 +115,22 @@
           <li class="story__item title story__item--house">
             <div class="story__benefit">
               <h2 class="story__title story__title--house">жилье</h2>
-              <p class="story__description story__description--house">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="story__description story__description--house">Рекомендуем пожить в настоящем мотеле, все как в
+                кино!</p>
             </div>
           </li>
           <li class="story__item title story__item--burger">
             <div class="story__benefit">
               <h2 class="story__title story__title--burger">еда</h2>
-              <p class="story__description story__description--burger">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="story__description story__description--burger">Всегда заказывайте фирменный бургер, вы не
+                разочаруетесь!</p>
             </div>
           </li>
           <li class="story__item title story__item--gift">
             <div class="story__benefit">
               <h2 class="story__title story__title--gift">сувениры</h2>
-              <p class="story__description story__description--gift">не только китайского, но и местного производства!</p>
+              <p class="story__description story__description--gift">не только китайского, но и местного производства!
+              </p>
             </div>
           </li>
           <li class="story__preeminence-item">
@@ -133,6 +142,11 @@
           </li>
           <li class="story__preeminence-img">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/desktop/bridge.webp 1x, img/desktop/bridge@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/tablet/bridge.webp 1x, img/tablet/bridge@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile/bridge.webp 1x, img/mobile/bridge@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/desktop/bridge.jpg 1x, img/desktop/bridge@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/tablet/bridge.jpg 1x, img/tablet/bridge@2x.jpg 2x">
               <img class="story__img" src="img/mobile/bridge.jpg" srcset="img/mobile/bridge@2x.jpg 2x" width="320"
@@ -143,14 +157,16 @@
             <div class="story__piece">
               <h2 class="story__title-rank">небольшая площадь</h2>
               <p class="story__numbering">— №3 —</p>
-              <p class="story__description-rank story__description-rank--square">все интересные места находятся очень близко</p>
+              <p class="story__description-rank story__description-rank--square">все интересные места находятся очень
+                близко</p>
             </div>
           </li>
           <li class="story__item">
             <div class="story__piece">
               <h2 class="story__title-rank">красивая дорога</h2>
               <p class="story__numbering">— №4 —</p>
-              <p class="story__description-rank story__description-rank--road">ехать в седону из лас-вегаса совсем <br> не скучно!</p>
+              <p class="story__description-rank story__description-rank--road">ехать в седону из лас-вегаса совсем <br>
+                не скучно!</p>
             </div>
           </li>
           <li class="story__item">

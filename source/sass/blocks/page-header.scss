@@ -11,17 +11,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__nav {
-    position: relative;
-  }
-
   .page-header__logo-image {
     height: 0;
-    position: relative;
-  }
-
-  .page-header__logo {
-    position: absolute;
-    top: -56px;
+    position: static;
   }
 }
