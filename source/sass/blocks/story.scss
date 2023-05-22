@@ -30,18 +30,26 @@
   margin: 0;
 }
 
-.story__highlights-img,
+.story__highlights-img {
+  background-color: $environment-background;
+  height: 260px;
+}
+
 .story__preeminence-item {
   background-color: $environment-background;
   list-style: none;
-  height: 256px;
+  min-height: 191px;
+  margin-top: 45px;
 }
 
-.story__preeminence-img,
 .story__highlights-item {
   background-color: $environment-background;
   list-style: none;
-  height: 256px;
+  min-height: 209px;
+}
+
+.story__preeminence-img {
+  height: 260px;
 }
 
 .story__img {
@@ -51,21 +59,22 @@
 
 .story__preeminence-title {
   color: $color-main;
-  padding-top: 37px;
-  margin-top: 46px;
-  margin-bottom: 16px;
+  margin: 0;
+  padding-top: 38px;
+  padding-bottom: 11px;
   font-size: 18px;
   line-height: 1.44;
 }
 
 .story__preeminence-numbering {
   color: $color-main;
-  margin-bottom: 17px;
+  margin: 0;
 }
 
 .story__preeminence-description {
   color: $color-main;
-  margin-bottom: 37px;
+  padding-top: 17px;
+  margin: 0;
 }
 
 .story__numbering {
@@ -74,16 +83,17 @@
 
 .story__list {
   outline: $outline;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background-color: $background-main;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
 .story__items {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .story__title {
@@ -100,6 +110,7 @@
 
 .story__description {
   text-align: start;
+  margin: 0;
   padding-left: 47px;
 }
 
@@ -108,11 +119,19 @@
   font-size: 18px;
   line-height: 1.44;
   padding-top: 24px;
+  padding-bottom: 11px;
+  margin: 0;
 }
 
 .story__description-rank {
-  padding: 20px 18px 49px 18px;
+  padding: 18px 19px 24px;
   border-bottom: 1px solid #d6d6d6;
+  margin: 0;
+}
+
+.story__description-last {
+  margin: 0;
+  padding: 18px 18px 28px;
 }
 
 .story__piece {
@@ -122,7 +141,7 @@
 }
 
 .story__benefit {
-  padding: 0 18px;
+  padding: 1px 18px;
 }
 
 .story__item--house {
@@ -132,8 +151,8 @@
     position: absolute;
     width: 40px;
     height: 38px;
-    top: 23px;
-    left: 18px;
+    top: 25px;
+    left: 19px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -145,9 +164,9 @@
     background-image: url("../img/mobile/icon-burger.svg");
     position: absolute;
     width: 40px;
-    height: 36px;
-    top: 23px;
-    left: 18px;
+    height: 37px;
+    top: 25px;
+    left: 19px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -168,6 +187,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .story__highlights-img {
+    grid-column: 2/4;
+    height: 256px;
+    list-style: none;
+  }
+
+  .story__highlights-title {
+    padding: 53px 27px 13px;
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
+  .story__highlights-numbering {
+    padding-bottom: 23px;
+  }
+
+  .story__highlights-description {
+    padding: 0;
+  }
+
   .story__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -180,12 +219,7 @@
 
   .story__highlights-item {
     grid-column: 1/2;
-    height: 256px;
-  }
-
-  .story__highlights-img {
-    grid-column: 2/4;
-
+    min-height: 256px;
   }
 
   .story__highlights-img img {
@@ -196,11 +230,13 @@
   .story__preeminence-item {
     grid-column: 3/4;
     min-height: 256px;
+    margin: 0;
   }
 
   .story__preeminence-img {
     grid-column: 1/3;
     grid-row: 3/4;
+    height: 256px;
   }
 
   .story__preeminence-img img {
@@ -211,7 +247,9 @@
   .story__title {
     text-align: center;
     padding: 0;
-    margin-top: 158px;
+    margin-top: 157px;
+    font-size: 21px;
+    line-height: 1.24;
   }
 
   .story__description {
@@ -219,12 +257,56 @@
     padding: 0;
   }
 
+  .story__description--house {
+    padding: 24px 15px;
+  }
+
+  .story__description--burger {
+    padding: 24px 34px;
+  }
+
+  .story__title--burger {
+    margin-top: 155px;
+  }
+
+  .story__title--gift {
+    margin-top: 152px;
+  }
+
+  .story__description--gift {
+    padding: 23px 23px 20px 19px;
+  }
+
+  .story__preeminence-title {
+    font-size: 21px;
+    line-height: 1.24;
+    padding: 52px 35px 14px;
+  }
+
+  .story__preeminence-description {
+    padding: 22px;
+  }
+
+  .story__title-rank {
+    padding: 41px 41px 13px;
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
+  .story__description-rank--square {
+    padding: 23px 11px;
+  }
+
+  .story__description-rank--road {
+    padding: 24px;
+  }
+
   .story__description-rank {
     border: none;
   }
 
   .story__description-last {
-    padding: 20px 18px 49px 18px;
+    padding: 23px 12px 49px;
   }
 
   .story__item--house,
@@ -235,10 +317,9 @@
 
   .story__item--burger {
     &::after {
-      mask-repeat: no-repeat;
-      width: 77px;
-      height: 77px;
-      top: 62px;
+      width: 83px;
+      height: 82px;
+      top: 52px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -246,10 +327,9 @@
 
   .story__item--gift {
     &::after {
-      mask-repeat: no-repeat;
-      width: 77px;
-      height: 77px;
-      top: 62px;
+      width: 82px;
+      height: 83px;
+      top: 60px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -257,17 +337,24 @@
 
   .story__item--house {
     &::after {
-      mask-repeat: no-repeat;
-      width: 77px;
-      height: 77px;
-      top: 62px;
+      width: 83px;
+      height: 78px;
+      top: 57px;
       left: 50%;
       transform: translateX(-50%);
     }
   }
+
+  .story__item:nth-child(n+6) {
+    min-height: 256px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .story__piece {
+    padding: 0;
+  }
+
   .story__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -294,25 +381,32 @@
   }
 
   .story__title {
-    text-align: center;
     padding: 0;
+    margin-top: 170px;
   }
 
-  .story__description {
-    text-align: center;
-    padding: 0;
+  .story__title--burger {
+    margin-top: 168px;
+  }
+
+  .story__description--house {
+    padding: 23px 50px 69px;
+  }
+
+  .story__description--burger {
+    padding: 21px 32px 72px 29px;
+  }
+
+  .story__description--gift {
+    padding: 23px 53px 20px 83px;
   }
 
   .story__item {
     min-height: 330px;
   }
 
-  .story__item:nth-child(n+4) {
-    min-height: 256px;
-  }
-
   .story__highlights-title {
-    padding: 40px 140px 20px;
+    padding: 55px 140px 12px;
     margin: 0;
   }
 
@@ -330,17 +424,27 @@
 
 
   .story__highlights-description:nth-child(n+2) {
-    padding: 0 50px 69px;
+    padding: 23px 65px 0 61px;
   }
 
+  .story__item--house::after {
+    top: 67px;
+  }
 
-  .story__description {
-    padding: 0 50px 69px;
+  .story__item--burger::after {
+    width: 89px;
+    top: 66px;
+  }
+
+  .story__item--gift::after {
+    width: 90px;
+    height: 85px;
+    top: 64px;
   }
 
 
   .story__preeminence-title {
-    padding: 52px 60px 22px;
+    padding: 52px 128px 12px 121px;
     margin: 0;
   }
 
@@ -351,21 +455,36 @@
 
 
   .story__preeminence-description {
-    padding: 33px 90px 55px;
+    padding: 23px 88px 55px;
     margin: 0;
   }
 
   .story__title-rank {
-    padding: 60px 140px 22px;
+    padding: 53px 140px 12px;
     margin: 0;
   }
 
   .story__description-rank {
-    padding: 35px 50px 57px;
-    border: none;
+    padding-top: 23px;
+  }
+
+  .story__description-rank--square {
+    padding-right: 57px;
+    padding-left: 54px;
+  }
+
+  .story__description-rank--road {
+    padding-left: 18px;
   }
 
   .story__description-last {
-    padding: 35px 50px 57px;
+    padding-left: 54px;
+    padding-right: 56px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .story__description-rank br {
+    display: none;
   }
 }

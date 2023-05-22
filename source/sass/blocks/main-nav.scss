@@ -3,9 +3,10 @@
 }
 
 .main-nav__list {
-  padding: 0px;
+  padding: 0;
   background-color: $environment-background;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .main-nav__toggle {
@@ -13,7 +14,7 @@
   display: block;
   right: 20px;
   z-index: 2;
-  top: 17px;
+  top: 15px;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -28,8 +29,8 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
-  color: #fff;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #ffffff;
 }
 
 .main-nav--closed .main-nav__closed,
@@ -63,7 +64,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-
   .main-nav--closed .main-nav__list,
   .main-nav--nojs .main-nav__toggle {
     display: none;

@@ -10,3 +10,9 @@
     margin-top: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .location__map {
+    margin-top: 67px;
+  }
+}
