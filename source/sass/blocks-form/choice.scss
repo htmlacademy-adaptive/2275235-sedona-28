@@ -6,6 +6,7 @@
 
 .choice__list {
   padding: 0;
+  margin-top: 9px;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,6 +15,7 @@
     min-width: 648px;
     grid-template-columns: repeat(2, 1fr);
     padding: 0;
+    margin-bottom: 7px;
   }
 
   .choice__item {
@@ -21,26 +23,30 @@
   }
 
   .choice__item:nth-child(2n) {
-    margin-left: 32px;
+    margin-left: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .choice__list {
     width: 960px;
-    gap: 30px;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 60px;
   }
 
   .choice__item:first-child {
     margin-left: 44px;
   }
 
-  .choice__item:nth-child(2n) {
-    margin: 0;
+  .choice__item:nth-child(2) {
+    margin-left: 41px;
+  }
+
+  .choice__item:last-child {
+    margin-left: 12px;
   }
 
   .choice__item {
-    margin-left: 0;
+    margin-left: 35px;
   }
 }

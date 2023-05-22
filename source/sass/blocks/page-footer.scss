@@ -3,12 +3,13 @@
   font-size: 21px;
   line-height: 1.24;
   font-weight: 700;
-  margin-top: 41px;
+  margin-top: 36px;
   margin-bottom: 30px;
 }
 
 .page-footer__academy {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -17,18 +18,15 @@
   color: $color-title;
   text-decoration: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }
 
-.page-footer__HTML-academy {
-  color: $color-title;
-}
-
 .page-footer__HTML-academy:hover,
 .page-footer__social-academy:hover {
-    color: $environment-background;
-  }
+  color: $environment-background;
+}
 
 .page-footer__HTML-academy:active,
 .page-footer__social-academy:active {
@@ -44,11 +42,13 @@
 
   .page-footer__hashtag {
     margin-left: 60px;
+    margin-top: 23px;
     align-self: center;
   }
 
   .page-footer__academy {
     margin-right: 60px;
+    margin-bottom: 6px;
   }
 }
 
@@ -63,5 +63,6 @@
 
   .page-footer__academy {
     margin-right: 120px;
+    margin-bottom: 10px;
   }
 }

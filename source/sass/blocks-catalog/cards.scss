@@ -1,28 +1,40 @@
 .cards__list {
   outline: $outline;
-  margin: 0px;
+  margin: 0;
   padding: 0 18px;
 }
 
 .cards__item {
   list-style: none;
-  margin-top: 50px;
+  margin-top: 61px;
+  position: relative;
+}
+
+.cards__item::after {
+  content: "";
+  position: absolute;
+  width: 350vw;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: -270px;
+  top: -24px;
 }
 
 .cards__title {
   color: $color-title;
   font-size: 14px;
-  line-height: 1.50;
+  line-height: 1.5;
   font-weight: 700;
   text-align: start;
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 11px;
+  padding-bottom: 1px;
 }
 
 .cards__creator {
   text-align: start;
   margin: 0;
+  text-transform: initial;
 }
 
 .cards__block {
@@ -31,15 +43,16 @@
   align-items: center;
   height: 26px;
   margin: 0;
-  padding-top: 11px;
+  padding-top: 15px;
 }
 
 .cards__link-text {
   color: $color-title;
   font-size: 14px;
-  line-height: 1.50;
+  line-height: 1.5;
   font-weight: 700;
   margin-left: 14px;
+  margin-top: 25px;
 }
 
 .cards__images {
@@ -52,7 +65,8 @@
 }
 
 .cards__folder {
-  margin-top: -5px;
+  margin-top: -6px;
+  margin-left: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,19 +77,26 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .cards__item::after {
+    display: none;
+  }
+
   .cards__folder {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -6px;
-    height: 80px;
+    min-height: 80px;
   }
 
   .cards__like {
-    margin-top: 10px;
+    margin-top: 9px;
   }
+
   .cards__link-text {
-    margin-top: 32px;
+    margin-top: 27px;
+    margin-left: 10px;
+    margin-right: 5px;
   }
 
   .cards__block {
@@ -110,14 +131,14 @@
   }
 
   .cards__title {
-    padding-left: 20px;
-    padding-top: 22px;
+    padding-left: 18px;
+    padding-top: 24px;
     margin: 0;
   }
 
   .cards__creator {
     margin: 0;
-    padding-left: 20px;
+    padding-left: 18px;
     padding-bottom: 15px;
   }
 }
@@ -138,16 +159,32 @@
   }
 
   .cards__block {
-    top: 28px;
-    right: 25px;
+    margin-bottom: 25px;
+    margin-right: 17px;
   }
 
   .cards__title {
     color: $color-main;
+    padding-left: 23px;
+    padding-top: 12px;
+  }
+
+  .cards__title--big {
+    margin: 0;
+    padding-left: 19px;
+    padding-top: 14px;
   }
 
   .cards__creator {
     color: $color-main;
+    margin-top: 4px;
+    padding-left: 23px;
+    padding-bottom: 11px;
+  }
+
+  .cards__creator--big {
+    color: $color-main;
+    padding-left: 19px;
   }
 
   .cards__link-text {

@@ -3,16 +3,29 @@
   font-size: 18px;
   line-height: 1.44;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .view__description {
-  margin-top: 38px;
+  margin-top: 27px;
   margin-bottom: 38px;
+  margin-left: 7px;
+  margin-right: 5px;
 }
 
 .view__piece {
   padding: 0 18px;
+  position: relative;
+}
+
+.view__piece::after {
+  content: "";
+  position: absolute;
+  width: 350vw;
+  height: 1px;
+  background-color: #e5e5e5;
+  right: -270px;
+  top: -18px;
 }
 
 .view__presentation img {
@@ -22,9 +35,11 @@
 
 .view__presentation {
   position: relative;
+  padding: 0 20px;
+  margin-bottom: -8px;
 }
 
-.view__presentation::after {
+.view__presentation--play::after {
   content: "";
   background-image: url("../img/mobile/polygon.png");
   position: absolute;
@@ -35,16 +50,34 @@
   transform: translate(50%, -50%);
 }
 
+.view__presentation--play {
+  border: none;
+  background-color: transparent;
+  width: 48px;
+  height: 54px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  position: absolute;
+}
+
 @media (min-width: $tablet-width) {
   .view__title {
     font-size: 30px;
-    margin-top: 57px;
-    margin-bottom: 38px;
+    margin-top: 48px;
+    margin-bottom: 23px;
+  }
+
+  .view__piece::after {
+    display: none;
   }
 
   .view__description {
-    margin: 0;
-    margin-bottom: 90px;
+    margin: 0 140px 90px;
+  }
+
+  .view__presentation {
+    margin-bottom: 40px;
   }
 
   .view__presentation img {
@@ -53,16 +86,20 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .view__title {
-    margin-top: 66px;
+    margin-top: 48px;
   }
 
   .view__description {
-    margin-bottom: 87px;
+    margin: 25px 360px 87px;
   }
 
   .view__presentation img {
     width: 800px;
+  }
+
+  .view__presentation {
+    margin-bottom: 84px;
   }
 }

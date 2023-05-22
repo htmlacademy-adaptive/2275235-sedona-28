@@ -7,7 +7,7 @@
   margin-left: 62px;
 }
 
-.control__input[type=radio]+.control__mark {
+.control__input[type="radio"] + .control__mark {
   content: "";
   position: absolute;
   left: 0;
@@ -18,7 +18,37 @@
   background-color: #f2f2f2;
 }
 
-.control__input[type=radio]:checked+.control__mark::before {
+.control__input[type="radio"] + .control__mark:hover {
+  background-color: #e5e5e5;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark:hover {
+  background-color: #e5e5e5;
+}
+
+.control__mark:hover {
+  background-color: #e5e5e5;
+}
+
+.control__input[type="radio"] + .control__mark:active {
+  background-color: #d5d5d5;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark:active {
+  background-color: #d5d5d5;
+}
+
+.control__mark:active {
+  &::before {
+    opacity: 30%;
+  }
+}
+
+.control__input:disabled + .control__mark {
+  color: rgb(245, 240, 240);
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -41,13 +71,12 @@
   cursor: pointer;
 }
 
-.control__input[type=checkbox]:checked+.control__mark::before {
+.control__input[type="checkbox"]:checked + .control__mark::before {
   content: "";
   position: absolute;
   width: 46px;
   height: 46px;
   background-image: url("../img/mobile/tick.svg");
-  background-color: $background-cards;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
