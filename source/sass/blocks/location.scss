@@ -5,6 +5,10 @@
   height: 350px;
 }
 
+.location__map-nojs {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .location__map {
     margin-top: 55px;
