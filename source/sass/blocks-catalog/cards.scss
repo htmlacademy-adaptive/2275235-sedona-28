@@ -64,6 +64,14 @@
   cursor: pointer;
 }
 
+.cards__like:hover {
+  fill: #9fe3ab;
+}
+
+.cards__like:active {
+  fill: #3a68f1;
+}
+
 .cards__folder {
   margin-top: -6px;
   margin-left: 2px;

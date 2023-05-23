@@ -42,8 +42,27 @@
     border: none;
   }
 
+  .site-list__link:hover {
+    background-color: #ffffff;
+    color: $color-hover;
+  }
+
+  .site-list__link:active {
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 30%;
+  }
+
   .site-list__link--current {
     color: #766357;
+  }
+
+  .site-list__link--current:hover {
+    color: #766357;
+  }
+
+  .site-list__link--current:active {
+    opacity: 100%;
   }
 
   .site-list__item {
