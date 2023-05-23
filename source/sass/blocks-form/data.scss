@@ -57,16 +57,35 @@
   padding-left: 16px;
 }
 
-.data__feedback input[type="email"]:hover,
-.data__section input[type="text"]:hover,
-.data__feedback input[type="tel"]:hover {
-  background-color: $color-hover;
+.data__feedback input[type="email"]::placeholder,
+.data__section input[type="text"]::placeholder,
+.data__feedback input[type="tel"]::placeholder,
+.data__textbox-input::placeholder {
+  background-color: #f2f2f2;
+  color: #000000;
+  opacity: 30%;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
 }
 
-.data__feedback input[type="email"]:active,
-.data__section input[type="text"]:active,
-.data__feedback input[type="tel"]:active {
-  background-color: $color-active;
+.data__feedback input[type="email"]:focus:not(:placeholder-shown),
+.data__section input[type="text"]:focus:not(:placeholder-shown),
+.data__feedback input[type="tel"]:focus:not(:placeholder-shown),
+.data__textbox-input:focus:not(:placeholder-shown) {
+  border: 4px solid #e5e5e5;
+  background-color: #ffffff;
+  outline: none;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
+}
+
+.data__feedback input[type="email"]:hover,
+.data__section input[type="text"]:hover,
+.data__feedback input[type="tel"]:hover,
+.data__textbox-input:hover {
+  background-color: #e5e5e5;
 }
 
 .data__feedback input[type="email"],
@@ -77,17 +96,6 @@
   font-size: 18px;
   line-height: 1.44;
   font-family: $font;
-}
-
-.data__section input[type="text"]::placeholder {
-  color: $color-title;
-}
-
-.data__feedback input[type="tel"],
-.data__feedback input[type="email"]::placeholder {
-  font-size: 18px;
-  line-height: 1.44;
-  font-weight: 700;
 }
 
 .data__title {
@@ -152,10 +160,13 @@
 
 .data__textbox-input {
   width: 100%;
+  background-color: #f2f2f2;
   min-height: 150px;
-  background-color: $background-cards;
   border: none;
   padding: 16px;
+  font-size: 18px;
+  line-height: 1.44;
+  font-weight: 700;
   font-family: $font;
 }
 
