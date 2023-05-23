@@ -39,7 +39,7 @@
   margin-bottom: -8px;
 }
 
-.view__presentation--play::after {
+.view__play::after {
   content: "";
   background-image: url("../img/mobile/polygon.png");
   position: absolute;
@@ -50,7 +50,7 @@
   transform: translate(50%, -50%);
 }
 
-.view__presentation--play {
+.view__play {
   border: none;
   background-color: transparent;
   width: 48px;

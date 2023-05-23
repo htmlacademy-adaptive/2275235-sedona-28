@@ -5,14 +5,43 @@
   height: 350px;
 }
 
+.location__mapping {
+  height: 405px;
+}
+
+.location__marker {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  bottom: 10.4%;
+  left: 46%;
+}
+
+.location__map-nojs {
+  width: 100%;
+  position: relative;
+  bottom: 355px;
+  height: 350px;
+}
+
 @media (min-width: $tablet-width) {
   .location__map {
     margin-top: 55px;
+  }
+
+  .location__marker {
+    bottom: 10.3%;
+    left: 48%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .location__map {
     margin-top: 67px;
+  }
+
+  .location__marker {
+    bottom: 10.3%;
+    left: 49%;
   }
 }

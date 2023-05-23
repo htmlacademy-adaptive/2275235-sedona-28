@@ -7,7 +7,9 @@
   <meta name="description" content="hotel browsing directory, city of Sedona in Arizona.">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="preload">
 </head>
 
 <body class="page__body">
@@ -78,6 +80,11 @@
           <li class="cards__item cards__item--big">
             <a class="cards__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/desktop/cards/cards1.webp 1x, img/desktop/cards/cards1@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/tablet/cards/cards1.webp 1x, img/tablet/cards/cards1@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/cards/cards1.webp 1x, img/mobile/cards/cards1@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/desktop/cards/cards1.jpg 1x, img/desktop/cards/cards1@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -105,6 +112,11 @@
           <li class="cards__item">
             <a class="cards__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/desktop/cards/cards2.webp 1x, img/desktop/cards/cards2@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/tablet/cards/cards2.webp 1x, img/tablet/cards/cards2@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/cards/cards2.webp 1x, img/mobile/cards/cards2@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/desktop/cards/cards2.jpg 1x, img/desktop/cards/cards2@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -132,6 +144,11 @@
           <li class="cards__item">
             <a class="cards__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/desktop/cards/cards3.webp 1x, img/desktop/cards/cards3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/tablet/cards/cards3.webp 1x, img/tablet/cards/cards3@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/cards/cards3.webp 1x, img/mobile/cards/cards3@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/desktop/cards/cards3.jpg 1x, img/desktop/cards/cards3@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -159,6 +176,11 @@
           <li class="cards__item">
             <a class="cards__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/desktop/cards/cards4.webp 1x, img/desktop/cards/cards4@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/tablet/cards/cards4.webp 1x, img/tablet/cards/cards4@2x.webp 2x">
+                <source type="image/webp" srcset="img/mobile/cards/cards4.webp 1x, img/mobile/cards/cards4@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="img/desktop/cards/cards4.jpg 1x, img/desktop/cards/cards4@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -194,13 +216,19 @@
         <div class="view__presentation">
           <picture>
             <source media="(min-width: 1200px)"
+              srcset="img/desktop/video-desktop.webp 1x, img/desktop/video-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/tablet/video-desktop.webp 1x, img/tablet/video-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/mobile/video-mobile.webp 1x, img/mobile/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
               srcset="img/desktop/video-desktop.jpg 1x, img/desktop/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="img/tablet/video-desktop.jpg 1x, img/tablet/video-desktop@2x.jpg 2x">
             <img src="img/mobile/video-mobile.jpg" srcset="img/mobile/video-mobile@2x.jpg 2x" width="280" height="177"
               alt="видеопрезентация.">
           </picture>
-          <button class="view__presentation--play" type="button"></button>
+          <button class="view__play" type="button"><span class="visually-hidden">включить
+              воспроизведение.</span></button>
         </div>
       </section>
       <footer class="page-footer">

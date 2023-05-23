@@ -25,6 +25,16 @@
   position: relative;
 }
 
+.data__title-legend--estimation {
+  margin: 0;
+  padding-top: 44px;
+}
+
+.data__title-legend--attractions {
+  padding-top: 49px;
+  margin: 0;
+}
+
 .data__title-legend::after {
   content: "";
   position: absolute;
@@ -45,6 +55,18 @@
   width: 100%;
   height: 58px;
   padding-left: 16px;
+}
+
+.data__feedback input[type="email"]:hover,
+.data__section input[type="text"]:hover,
+.data__feedback input[type="tel"]:hover {
+  background-color: $color-hover;
+}
+
+.data__feedback input[type="email"]:active,
+.data__section input[type="text"]:active,
+.data__feedback input[type="tel"]:active {
+  background-color: $color-active;
 }
 
 .data__feedback input[type="email"],
@@ -76,7 +98,7 @@
 }
 
 .data__feedback:nth-child(4) {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   margin-top: -20px;
 }
 
@@ -86,7 +108,6 @@
 }
 
 .data__feedback {
-  margin-bottom: 44px;
   text-align: start;
   padding: 0;
   border: none;
@@ -168,24 +189,26 @@
   .data__title-legend {
     font-size: 21px;
     line-height: 1.24;
-    margin-bottom: 28px;
     padding-left: 65px;
     padding-right: 65px;
+    padding-bottom: 8px;
   }
 
   .data__title-legend--estimation {
     padding-left: 188px;
+    padding-top: 37px;
   }
 
   .data__title-legend--attractions {
     text-align: center;
     padding-left: 162px;
     padding-right: 165px;
-    margin-bottom: 31px;
+    padding-top: 20px;
   }
 
   .data__title-legend--emotions {
     padding-left: 199px;
+    padding-top: 21px;
   }
 
   .data__btn {
@@ -212,7 +235,7 @@
     padding-right: 29px;
     margin-right: 23px;
     margin-left: 0;
-    margin-bottom: 47px;
+    margin-bottom: 10px;
   }
 
   .data__section::after {
@@ -291,7 +314,6 @@
   .data__section {
     margin-right: 5px;
     padding-right: 45.5px;
-    margin-bottom: 56px;
   }
 
   .data__feedback:nth-child(n+3) {
@@ -320,11 +342,12 @@
   .data__title-legend--attractions {
     padding-left: 277px;
     padding-right: 279px;
-    margin-bottom: 61px;
+    padding-bottom: 40px;
   }
 
   .data__title-legend--estimation {
     padding-left: 345px;
+    padding-top: 46px;
   }
 
   .data__title-legend--emotions {
