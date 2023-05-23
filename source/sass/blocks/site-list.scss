@@ -22,11 +22,12 @@
 }
 
 .site-list__link:hover {
-  color: $color-hover;
+  background-color: #669ec0;
 }
 
 .site-list__link:active {
-  color: $color-active;
+  background-color: #5496bd;
+  opacity: 30%;
 }
 
 .site-list__link:last-child {

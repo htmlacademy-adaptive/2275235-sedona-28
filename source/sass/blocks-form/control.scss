@@ -18,8 +18,8 @@
   background-color: #f2f2f2;
 }
 
-.control__input:focus + .control__mark {
-  outline: 3px solid #21c8e2;
+.control__input:focus-visible + .control__mark {
+  outline: 2px solid #000000;
 }
 
 .control__input[type="radio"] + .control__mark:hover {
@@ -43,6 +43,8 @@
 }
 
 .control__mark:active {
+  background-color: #d5d5d5;
+
   &::before {
     opacity: 30%;
   }
