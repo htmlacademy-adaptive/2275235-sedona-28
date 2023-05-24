@@ -4,14 +4,13 @@
   line-height: 1.44;
   font-weight: 700;
   text-transform: none;
-  margin-left: 62px;
 }
 
 .control__input[type="radio"] + .control__mark {
   content: "";
   position: absolute;
-  left: 0;
-  top: 9px;
+  left: -62px;
+  top: 10px;
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -57,18 +56,18 @@
 .control__input[type="radio"]:checked + .control__mark::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 15px;
+  top: 48%;
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
   background-color: $color-paragraph;
   border-radius: 50%;
+  right: 15px;
 }
 
 .control__mark {
   position: absolute;
-  left: 0;
+  left: -62px;
   top: 10px;
   width: 46px;
   height: 46px;
@@ -86,4 +85,14 @@
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .control__input[type="radio"] + .control__mark {
+    top: -12px;
+  }
+
+  .control__mark {
+    top: -12px;
+  }
 }
