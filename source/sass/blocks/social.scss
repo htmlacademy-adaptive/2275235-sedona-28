@@ -1,18 +1,13 @@
 .social__list {
-  list-style: none;
-  width: 162px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 156px;
   margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  gap: 6px;
   padding: 0;
-  margin-top: 29px;
-}
-
-.social__item {
-  margin-right: 6px;
+  margin-bottom: 30px;
 }
 
 .social__link {
@@ -67,14 +62,12 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    margin-left: 4px;
     margin-top: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social__list {
-    margin-left: 4px;
     margin-top: 47px;
   }
 }

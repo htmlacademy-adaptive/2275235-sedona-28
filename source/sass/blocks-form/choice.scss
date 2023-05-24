@@ -6,48 +6,30 @@
 }
 
 .choice__list {
-  padding: 0;
-  margin-top: 9px;
+  padding: 8px 0 14px 62px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .choice__list {
     display: grid;
-    min-width: 648px;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0;
-    margin-bottom: 7px;
+    row-gap: 36px;
+    column-gap: 9px;
+    padding-top: 33px;
+    padding-left: 146px;
+    padding-bottom: 7px;
   }
 
   .choice__item {
-    margin-left: 84px;
-  }
-
-  .choice__item:nth-child(2n) {
-    margin-left: 16px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .choice__list {
-    width: 960px;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 60px;
-  }
-
-  .choice__item:first-child {
-    margin-left: 44px;
-  }
-
-  .choice__item:nth-child(2) {
-    margin-left: 41px;
-  }
-
-  .choice__item:last-child {
-    margin-left: 12px;
-  }
-
-  .choice__item {
-    margin-left: 35px;
+    padding-bottom: 60px;
+    padding-left: 107px;
   }
 }

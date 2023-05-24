@@ -45,6 +45,14 @@
   top: -26px;
 }
 
+.data__title-legend--estimation::after {
+  top: 18px;
+}
+
+.data__title-legend--attractions::after {
+  top: 24px;
+}
+
 .data__input {
   font-size: 18px;
   line-height: 1.44;
@@ -86,6 +94,10 @@
 .data__feedback input[type="tel"]:hover,
 .data__textbox-input:hover {
   background-color: #e5e5e5;
+
+  &::placeholder {
+    background-color: #e5e5e5;
+  }
 }
 
 .data__feedback input[type="email"],
@@ -111,7 +123,7 @@
 }
 
 .data__feedback:last-child {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   margin-top: 49px;
 }
 
@@ -208,18 +220,19 @@
   .data__title-legend--estimation {
     padding-left: 188px;
     padding-top: 37px;
+    padding-bottom: 28px;
   }
 
   .data__title-legend--attractions {
     text-align: center;
     padding-left: 162px;
     padding-right: 165px;
-    padding-top: 20px;
+    padding-top: 34px;
   }
 
   .data__title-legend--emotions {
     padding-left: 199px;
-    padding-top: 21px;
+    padding-top: 36px;
   }
 
   .data__btn {
@@ -243,7 +256,7 @@
     position: relative;
     grid-column: 1/2;
     padding-left: 0;
-    padding-right: 29px;
+    padding-right: 16px;
     margin-right: 23px;
     margin-left: 0;
     margin-bottom: 10px;
@@ -330,6 +343,7 @@
   .data__feedback:nth-child(n+3) {
     width: 960px;
     margin-top: 63px;
+    margin-bottom: 36px;
   }
 
   .data__feedback:nth-child(n + 3):nth-child(-n + 5) {
